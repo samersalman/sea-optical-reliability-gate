@@ -1,0 +1,5 @@
+# Fixture plan: only the keys 40_render.R reads.
+manuscript:
+  methods_words: 67
+  results_words: 54
+  tolerance: 5

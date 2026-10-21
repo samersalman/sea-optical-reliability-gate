@@ -1,0 +1,560 @@
+{
+  "script": "03_association.R",
+  "entries": {
+    "assoc_auroc_contrast_local": {
+      "display": "0.32 (95% CI 0.27 to 0.37)",
+      "raw": [0.322276906427737, 0.27276554211903, 0.373898998649737],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_contrast_rms": {
+      "display": "0.46 (95% CI 0.40 to 0.52)",
+      "raw": [0.458259204343298, 0.401725548256184, 0.516516804510508],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_haze_dcp": {
+      "display": "0.60 (95% CI 0.55 to 0.65)",
+      "raw": [0.601534452712068, 0.553332551773618, 0.653214062535272],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_illum_slope": {
+      "display": "0.41 (95% CI 0.36 to 0.46)",
+      "raw": [0.409011920794055, 0.36398376334898, 0.459086717083807],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_lum_entropy": {
+      "display": "0.41 (95% CI 0.35 to 0.47)",
+      "raw": [0.413031708677377, 0.353366395930523, 0.469370605045215],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_lum_mean": {
+      "display": "0.55 (95% CI 0.49 to 0.61)",
+      "raw": [0.548444250979041, 0.491608895374574, 0.605969918410013],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_red_dom": {
+      "display": "0.57 (95% CI 0.52 to 0.63)",
+      "raw": [0.574937070843101, 0.516455095819133, 0.632466323751966],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_sat_frac": {
+      "display": "0.52 (95% CI 0.47 to 0.57)",
+      "raw": [0.519560712617723, 0.474337701008301, 0.573287741367014],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_sharp_tenengrad": {
+      "display": "0.28 (95% CI 0.23 to 0.33)",
+      "raw": [0.277809548424542, 0.226879129252318, 0.329775408511921],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_spec_frac": {
+      "display": "0.50 (95% CI 0.46 to 0.55)",
+      "raw": [0.499016893459509, 0.458699327510948, 0.546327219917971],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_under_frac": {
+      "display": "0.43 (95% CI 0.37 to 0.48)",
+      "raw": [0.427098850241152, 0.365441277531376, 0.483921568971067],
+      "note": "AUROC for Difficult, Center 1 pooled"
+    },
+    "assoc_auroc_within_contrast_local": {
+      "display": "0.33 (95% CI 0.27 to 0.39)",
+      "raw": [0.329898964423009, 0.271799389643736, 0.388567817534863],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_contrast_rms": {
+      "display": "0.46 (95% CI 0.41 to 0.52)",
+      "raw": [0.462511668780332, 0.40858434016415, 0.520305339088958],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_haze_dcp": {
+      "display": "0.60 (95% CI 0.55 to 0.67)",
+      "raw": [0.60149114520999, 0.545680148193774, 0.665294577338773],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_illum_slope": {
+      "display": "0.41 (95% CI 0.36 to 0.46)",
+      "raw": [0.407727607640285, 0.362043356000514, 0.455065527437103],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_lum_entropy": {
+      "display": "0.42 (95% CI 0.36 to 0.48)",
+      "raw": [0.419622189281298, 0.356671339720829, 0.47693987525136],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_lum_mean": {
+      "display": "0.54 (95% CI 0.48 to 0.61)",
+      "raw": [0.541438307545031, 0.476746082741594, 0.606960036093052],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_red_dom": {
+      "display": "0.56 (95% CI 0.50 to 0.62)",
+      "raw": [0.557157512870357, 0.496133415637389, 0.620099844329713],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_sat_frac": {
+      "display": "0.51 (95% CI 0.46 to 0.56)",
+      "raw": [0.50849744972213, 0.457648996631177, 0.564719253180762],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_sharp_tenengrad": {
+      "display": "0.28 (95% CI 0.22 to 0.34)",
+      "raw": [0.283429657776583, 0.224392249657509, 0.342748788365761],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_spec_frac": {
+      "display": "0.49 (95% CI 0.45 to 0.54)",
+      "raw": [0.491641901489718, 0.446472664206615, 0.544117604884615],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_auroc_within_under_frac": {
+      "display": "0.44 (95% CI 0.37 to 0.50)",
+      "raw": [0.439167842467302, 0.365157219341081, 0.502893083605312],
+      "note": "pair-weighted within-domain AUROC for Difficult, Center 1"
+    },
+    "assoc_epv_joint": {
+      "display": "61.6",
+      "raw": 61.5714285714286,
+      "note": ""
+    },
+    "assoc_epv_univariable": {
+      "display": "117.5",
+      "raw": 117.545454545455,
+      "note": ""
+    },
+    "assoc_ext_auroc_contrast_local": {
+      "display": "0.43 (95% CI 0.39 to 0.47)",
+      "raw": [0.434338013566104, 0.393607321286307, 0.474131608766152],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_contrast_rms": {
+      "display": "0.55 (95% CI 0.52 to 0.59)",
+      "raw": [0.554990909688301, 0.519434003191638, 0.590484026384252],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_haze_dcp": {
+      "display": "0.45 (95% CI 0.41 to 0.50)",
+      "raw": [0.454615979964807, 0.409636341077419, 0.504438020222767],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_illum_slope": {
+      "display": "0.50 (95% CI 0.46 to 0.53)",
+      "raw": [0.497126877386663, 0.45969288065445, 0.534301305573431],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_lum_entropy": {
+      "display": "0.49 (95% CI 0.45 to 0.53)",
+      "raw": [0.486773413941399, 0.448517559226461, 0.529341040060512],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_lum_mean": {
+      "display": "0.44 (95% CI 0.40 to 0.48)",
+      "raw": [0.435871319153907, 0.39726624247932, 0.477047001019092],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_red_dom": {
+      "display": "0.53 (95% CI 0.47 to 0.58)",
+      "raw": [0.527066494352324, 0.473432959015494, 0.575478158690798],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_sat_frac": {
+      "display": "0.57 (95% CI 0.52 to 0.61)",
+      "raw": [0.565994202644587, 0.522905687790334, 0.609172212850819],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_sharp_tenengrad": {
+      "display": "0.41 (95% CI 0.37 to 0.46)",
+      "raw": [0.409896392350996, 0.366590763405376, 0.455095047438161],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_spec_frac": {
+      "display": "0.54 (95% CI 0.50 to 0.59)",
+      "raw": [0.54409166246833, 0.498868117793614, 0.587703874101077],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_auroc_under_frac": {
+      "display": "0.52 (95% CI 0.48 to 0.56)",
+      "raw": [0.517600157711432, 0.483880167686769, 0.557869945468354],
+      "note": "AUROC for Difficult, Center 2 (descriptive)"
+    },
+    "assoc_ext_n_failure_patients": {
+      "display": "31",
+      "raw": 31,
+      "note": ""
+    },
+    "assoc_ext_n_failures": {
+      "display": "109",
+      "raw": 109,
+      "note": ""
+    },
+    "assoc_ext_or_contrast_local": {
+      "display": "2.10 (95% CI 1.45 to 3.05)",
+      "raw": [2.10413627428853, 1.45013476036995, 3.05308829342682],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_contrast_rms": {
+      "display": "0.93 (95% CI 0.72 to 1.20)",
+      "raw": [0.927484316304168, 0.71808208014759, 1.19795101531207],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_estimated": {
+      "display": "yes",
+      "raw": "yes",
+      "note": ""
+    },
+    "assoc_ext_or_haze_dcp": {
+      "display": "0.78 (95% CI 0.62 to 0.98)",
+      "raw": [0.778090475184724, 0.61994939194766, 0.976571306362866],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_illum_slope": {
+      "display": "0.85 (95% CI 0.67 to 1.07)",
+      "raw": [0.845733960253911, 0.668504981933078, 1.06994854317835],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_lum_entropy": {
+      "display": "1.34 (95% CI 0.94 to 1.91)",
+      "raw": [1.34147417792506, 0.944219921080039, 1.90586210888382],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_lum_mean": {
+      "display": "0.79 (95% CI 0.62 to 1.03)",
+      "raw": [0.794743744152362, 0.615384926964642, 1.02637811098939],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_red_dom": {
+      "display": "1.35 (95% CI 0.93 to 1.96)",
+      "raw": [1.34615873365764, 0.92578340788364, 1.9574160875764],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_sat_frac": {
+      "display": "1.16 (95% CI 1.02 to 1.33)",
+      "raw": [1.16233985027011, 1.01701380634787, 1.32843223867092],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_sharp_tenengrad": {
+      "display": "2.00 (95% CI 1.35 to 2.97)",
+      "raw": [1.99803374518439, 1.34501188044535, 2.9681067542494],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_spec_frac": {
+      "display": "0.99 (95% CI 0.83 to 1.18)",
+      "raw": [0.986072288561608, 0.826079310018869, 1.17705230778255],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_ext_or_under_frac": {
+      "display": "1.12 (95% CI 0.00 to 3,227.19)",
+      "raw": [1.12420067865976, 0.000391618990491434, 3227.18559769822],
+      "note": "adjusted OR for failure, Center 2 (descriptive)"
+    },
+    "assoc_failure_iou_threshold": {
+      "display": "0.90",
+      "raw": 0.9,
+      "note": ""
+    },
+    "assoc_failure_rate_c1": {
+      "display": "13.5%",
+      "raw": 0.134827945776851,
+      "note": ""
+    },
+    "assoc_joint_method": {
+      "display": "cluster-robust logistic",
+      "raw": "cluster-robust logistic",
+      "note": ""
+    },
+    "assoc_median_difficult_contrast_local": {
+      "display": "0.029",
+      "raw": 0.0285671856536593,
+      "note": ""
+    },
+    "assoc_median_difficult_contrast_rms": {
+      "display": "0.191",
+      "raw": 0.190748889674715,
+      "note": ""
+    },
+    "assoc_median_difficult_haze_dcp": {
+      "display": "0.264",
+      "raw": 0.263781040906906,
+      "note": ""
+    },
+    "assoc_median_difficult_illum_slope": {
+      "display": "0.042",
+      "raw": 0.0416815260256743,
+      "note": ""
+    },
+    "assoc_median_difficult_lum_entropy": {
+      "display": "5.379",
+      "raw": 5.37942496926803,
+      "note": ""
+    },
+    "assoc_median_difficult_lum_mean": {
+      "display": "0.387",
+      "raw": 0.386646988223762,
+      "note": ""
+    },
+    "assoc_median_difficult_red_dom": {
+      "display": "0.403",
+      "raw": 0.402575522661209,
+      "note": ""
+    },
+    "assoc_median_difficult_sat_frac": {
+      "display": "0.011",
+      "raw": 0.0113491533652971,
+      "note": ""
+    },
+    "assoc_median_difficult_sharp_tenengrad": {
+      "display": "2.31e-04",
+      "raw": 0.000231393583817407,
+      "note": ""
+    },
+    "assoc_median_difficult_spec_frac": {
+      "display": "0.007",
+      "raw": 0.00670631789767555,
+      "note": ""
+    },
+    "assoc_median_difficult_under_frac": {
+      "display": "0.025",
+      "raw": 0.0253484655378204,
+      "note": ""
+    },
+    "assoc_median_normal_contrast_local": {
+      "display": "0.034",
+      "raw": 0.0340257050743443,
+      "note": ""
+    },
+    "assoc_median_normal_contrast_rms": {
+      "display": "0.196",
+      "raw": 0.196477636275786,
+      "note": ""
+    },
+    "assoc_median_normal_haze_dcp": {
+      "display": "0.244",
+      "raw": 0.244446784257889,
+      "note": ""
+    },
+    "assoc_median_normal_illum_slope": {
+      "display": "0.127",
+      "raw": 0.127304975327551,
+      "note": ""
+    },
+    "assoc_median_normal_lum_entropy": {
+      "display": "5.437",
+      "raw": 5.43666748539073,
+      "note": ""
+    },
+    "assoc_median_normal_lum_mean": {
+      "display": "0.379",
+      "raw": 0.378935107881045,
+      "note": ""
+    },
+    "assoc_median_normal_red_dom": {
+      "display": "0.395",
+      "raw": 0.394654870033264,
+      "note": ""
+    },
+    "assoc_median_normal_sat_frac": {
+      "display": "0.009",
+      "raw": 0.00858772834860715,
+      "note": ""
+    },
+    "assoc_median_normal_sharp_tenengrad": {
+      "display": "4.11e-04",
+      "raw": 0.00041066828998737,
+      "note": ""
+    },
+    "assoc_median_normal_spec_frac": {
+      "display": "0.006",
+      "raw": 0.00628148327972325,
+      "note": ""
+    },
+    "assoc_median_normal_under_frac": {
+      "display": "0.039",
+      "raw": 0.0394084683700512,
+      "note": ""
+    },
+    "assoc_n_auroc_excl_half": {
+      "display": "7",
+      "raw": 7,
+      "note": ""
+    },
+    "assoc_n_difficult_c1": {
+      "display": "7,335",
+      "raw": 7335,
+      "note": ""
+    },
+    "assoc_n_failure_patients_c1": {
+      "display": "61",
+      "raw": 61,
+      "note": ""
+    },
+    "assoc_n_failures_c1": {
+      "display": "1,293",
+      "raw": 1293,
+      "note": ""
+    },
+    "assoc_n_fov_excluded": {
+      "display": "3",
+      "raw": 3,
+      "note": "labeled frames dropped because no field of view was found (fov_found == FALSE); they have no optics or U-Net rows"
+    },
+    "assoc_n_frames_c1": {
+      "display": "9,590",
+      "raw": 9590,
+      "note": ""
+    },
+    "assoc_n_frames_c2": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "assoc_n_normal_c1": {
+      "display": "2,255",
+      "raw": 2255,
+      "note": ""
+    },
+    "assoc_n_or_excl_one": {
+      "display": "7",
+      "raw": 7,
+      "note": ""
+    },
+    "assoc_n_patients_c1": {
+      "display": "61",
+      "raw": 61,
+      "note": ""
+    },
+    "assoc_n_patients_c2": {
+      "display": "38",
+      "raw": 38,
+      "note": ""
+    },
+    "assoc_or_contrast_local": {
+      "display": "0.61 (95% CI 0.47 to 0.79)",
+      "raw": [0.613671293948318, 0.473916079321969, 0.794639543682486],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_contrast_rms": {
+      "display": "0.78 (95% CI 0.65 to 0.93)",
+      "raw": [0.777296095874824, 0.648676088120175, 0.931418980485543],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_haze_dcp": {
+      "display": "1.20 (95% CI 0.97 to 1.49)",
+      "raw": [1.20414381963209, 0.9721016888852, 1.49157475492195],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_illum_slope": {
+      "display": "1.10 (95% CI 0.95 to 1.28)",
+      "raw": [1.09846659894252, 0.946126497760262, 1.27533566795642],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_joint_contrast_local": {
+      "display": "1.62 (95% CI 1.17 to 2.25)",
+      "raw": [1.62048195265512, 1.16921017270564, 2.24592790944017],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_contrast_rms": {
+      "display": "0.79 (95% CI 0.60 to 1.03)",
+      "raw": [0.787578454599756, 0.59958297823308, 1.03451873163186],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_haze_dcp": {
+      "display": "0.81 (95% CI 0.60 to 1.10)",
+      "raw": [0.810029628058996, 0.598017620863467, 1.09720512480217],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_illum_slope": {
+      "display": "0.96 (95% CI 0.82 to 1.13)",
+      "raw": [0.959760483788091, 0.818198907176458, 1.12581449102631],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_lum_entropy": {
+      "display": "0.95 (95% CI 0.75 to 1.21)",
+      "raw": [0.952745132571249, 0.748648205367657, 1.2124830876906],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_lum_mean": {
+      "display": "1.42 (95% CI 1.10 to 1.85)",
+      "raw": [1.42481864887832, 1.09505270028196, 1.85389085079534],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_red_dom": {
+      "display": "1.21 (95% CI 1.03 to 1.41)",
+      "raw": [1.20591048646638, 1.02974739113219, 1.412210522593],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_sat_frac": {
+      "display": "1.03 (95% CI 0.86 to 1.22)",
+      "raw": [1.02709353144877, 0.864192095043649, 1.22070211981124],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_sharp_tenengrad": {
+      "display": "0.41 (95% CI 0.28 to 0.58)",
+      "raw": [0.405751963605455, 0.281459498493032, 0.584931959486734],
+      "note": "joint model OR per SD of log value"
+    },
+    "assoc_or_joint_spec_frac": {
+      "display": "1.22 (95% CI 1.05 to 1.41)",
+      "raw": [1.21648701891321, 1.04690747209227, 1.4135352995684],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_joint_under_frac": {
+      "display": "1.02 (95% CI 0.87 to 1.21)",
+      "raw": [1.02379641973805, 0.867145958315433, 1.20874588530016],
+      "note": "joint model OR per SD"
+    },
+    "assoc_or_lum_entropy": {
+      "display": "0.74 (95% CI 0.61 to 0.89)",
+      "raw": [0.737913180674796, 0.611181220529518, 0.890923745565732],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_lum_mean": {
+      "display": "1.16 (95% CI 0.97 to 1.39)",
+      "raw": [1.15890390933139, 0.968239828755735, 1.38711322461246],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_red_dom": {
+      "display": "1.35 (95% CI 1.15 to 1.58)",
+      "raw": [1.35212484669016, 1.15409497332071, 1.5841344458649],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_sat_frac": {
+      "display": "1.22 (95% CI 1.04 to 1.42)",
+      "raw": [1.21528918328419, 1.03906986199983, 1.42139412663265],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_sharp_tenengrad": {
+      "display": "0.56 (95% CI 0.43 to 0.74)",
+      "raw": [0.563630140411766, 0.42779416019682, 0.742597643302165],
+      "note": "adjusted OR for failure per SD of log value"
+    },
+    "assoc_or_spec_frac": {
+      "display": "1.13 (95% CI 0.98 to 1.29)",
+      "raw": [1.128109142196, 0.983612444645568, 1.29383299655665],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_or_under_frac": {
+      "display": "0.82 (95% CI 0.70 to 0.98)",
+      "raw": [0.824988017928783, 0.697896553565217, 0.975223657788792],
+      "note": "adjusted OR for failure per SD"
+    },
+    "assoc_se_ratio_median": {
+      "display": "2.69",
+      "raw": 2.69165452964328,
+      "note": "median over the 11 univariable adjusted models of cluster-robust SE / model-based SE; NA for ridge fits"
+    },
+    "assoc_top_auroc_metric": {
+      "display": "Sharpness (Tenengrad)",
+      "raw": "Sharpness (Tenengrad)",
+      "note": ""
+    },
+    "assoc_vif_max_joint": {
+      "display": "13.5",
+      "raw": 13.4774297478802,
+      "note": ""
+    },
+    "assoc_vif_max_joint_term": {
+      "display": "contrast_rms",
+      "raw": "contrast_rms",
+      "note": ""
+    }
+  }
+}

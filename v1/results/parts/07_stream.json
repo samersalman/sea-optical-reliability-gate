@@ -1,0 +1,170 @@
+{
+  "script": "07_stream.R",
+  "entries": {
+    "stream_c1_flagged_share": {
+      "display": "10.0%",
+      "raw": 0.1,
+      "note": "Center 1 out-of-fold frames above the same threshold"
+    },
+    "stream_c1_flagged_share_hi": {
+      "display": "13.5%",
+      "raw": 0.134901436410291,
+      "note": "Center 1 out-of-fold frames above the same threshold"
+    },
+    "stream_c1_flagged_share_lo": {
+      "display": "7.0%",
+      "raw": 0.0697558705732887,
+      "note": "Center 1 out-of-fold frames above the same threshold"
+    },
+    "stream_c2_flagged_share": {
+      "display": "6.4%",
+      "raw": 0.0636108512628625,
+      "note": "Center 2 frames above the Center 1 threshold; CI clusters on patients"
+    },
+    "stream_c2_flagged_share_hi": {
+      "display": "8.5%",
+      "raw": 0.0852528059549319,
+      "note": "Center 2 frames above the Center 1 threshold; CI clusters on patients"
+    },
+    "stream_c2_flagged_share_lo": {
+      "display": "4.0%",
+      "raw": 0.0398859706009511,
+      "note": "Center 2 frames above the Center 1 threshold; CI clusters on patients"
+    },
+    "stream_coverage": {
+      "display": "90.0%",
+      "raw": 0.9,
+      "note": "primary coverage: the share of Center 1 frames retained"
+    },
+    "stream_flag_threshold": {
+      "display": "-1.564",
+      "raw": -1.56430375711632,
+      "note": "gate log-odds, Center 1 out-of-fold quantile fixed at 04a"
+    },
+    "stream_flagged_in_long_runs": {
+      "display": "13.5%",
+      "raw": 0.134920634920635,
+      "note": "share of flagged frames lying in a sustained run"
+    },
+    "stream_flagged_share": {
+      "display": "3.3%",
+      "raw": 0.0333130634798932,
+      "note": "95% CI clusters on videos"
+    },
+    "stream_flagged_share_80": {
+      "display": "25.9%",
+      "raw": 0.258652142876028,
+      "note": "at the threshold of coverage 80% fixed on Center 1"
+    },
+    "stream_flagged_share_80_hi": {
+      "display": "29.7%",
+      "raw": 0.296867248194138,
+      "note": "at the threshold of coverage 80% fixed on Center 1"
+    },
+    "stream_flagged_share_80_lo": {
+      "display": "21.6%",
+      "raw": 0.216491706633009,
+      "note": "at the threshold of coverage 80% fixed on Center 1"
+    },
+    "stream_flagged_share_hi": {
+      "display": "4.3%",
+      "raw": 0.0429221199171993,
+      "note": "95% CI clusters on videos"
+    },
+    "stream_flagged_share_lo": {
+      "display": "2.4%",
+      "raw": 0.023582252625562,
+      "note": "95% CI clusters on videos"
+    },
+    "stream_fov_excluded": {
+      "display": "25",
+      "raw": 25,
+      "note": "stream frames without a detected field of view, excluded"
+    },
+    "stream_frame_gaps": {
+      "display": "20",
+      "raw": 20,
+      "note": "places where analysed frames are more than one frame apart"
+    },
+    "stream_long_run_s": {
+      "display": "5 s",
+      "raw": 5,
+      "note": "a run at least this long counts as sustained"
+    },
+    "stream_n_frames": {
+      "display": "37,823",
+      "raw": 37823,
+      "note": "stream frames analysed (field of view found)"
+    },
+    "stream_n_runs": {
+      "display": "847",
+      "raw": 847,
+      "note": "runs of consecutive flagged frames"
+    },
+    "stream_n_total": {
+      "display": "37,848",
+      "raw": 37848,
+      "note": "stream frames in the manifest"
+    },
+    "stream_n_videos": {
+      "display": "20",
+      "raw": 20,
+      "note": ""
+    },
+    "stream_outside_range": {
+      "display": "0.6%",
+      "raw": 0.00634534542474156,
+      "note": "share of stream frames outside the Center 1 training range on at least one metric"
+    },
+    "stream_run_max_s": {
+      "display": "12 s",
+      "raw": 12,
+      "note": ""
+    },
+    "stream_run_median_s": {
+      "display": "1.0 s",
+      "raw": 1,
+      "note": ""
+    },
+    "stream_share_in_long_runs": {
+      "display": "0.4%",
+      "raw": 0.0044946196758586,
+      "note": "share of all analysed frames lying in a sustained run"
+    },
+    "stream_spearman_ens": {
+      "display": "0.19",
+      "raw": 0.189771378662782,
+      "note": "gate log-odds vs the baseline score; CI clusters on videos"
+    },
+    "stream_spearman_ens_ci": {
+      "display": "0.19 (95% CI 0.11 to 0.26)",
+      "raw": [0.189771378662782, 0.113365173845506, 0.262444759946488],
+      "note": "gate log-odds vs the baseline score; CI clusters on videos"
+    },
+    "stream_spearman_entropy": {
+      "display": "0.05",
+      "raw": 0.0488500689212833,
+      "note": "gate log-odds vs the baseline score; CI clusters on videos"
+    },
+    "stream_spearman_entropy_ci": {
+      "display": "0.05 (95% CI -0.01 to 0.12)",
+      "raw": [0.0488500689212833, -0.0135859225286608, 0.116138375604664],
+      "note": "gate log-odds vs the baseline score; CI clusters on videos"
+    },
+    "stream_video_flagged_max": {
+      "display": "6.8%",
+      "raw": 0.0676432572167169,
+      "note": ""
+    },
+    "stream_video_flagged_median": {
+      "display": "2.4%",
+      "raw": 0.0235632646256053,
+      "note": ""
+    },
+    "stream_video_flagged_min": {
+      "display": "0.1%",
+      "raw": 0.000749063670411985,
+      "note": ""
+    }
+  }
+}

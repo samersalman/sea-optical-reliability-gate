@@ -1,0 +1,153 @@
+# SEA optical reliability gate: pre-specified analysis plan (v1)
+# Written 2026-10-20 before any model was trained and before any Center 2 outcome was opened.
+# Values marked FREEZE_AT_G2 are filled into analysis_lock.yaml after the fold-0 pilot (Gate G2).
+
+paths:
+  root: "."                                                 # project root = folder that contains v1/ (not read by code)
+  data: "Spine endoscopic atlas"                            # relative to root
+  labeled_dir: "Spine endoscopic atlas/classified"
+  stream_dir: "Spine endoscopic atlas/unclassified"
+  v1: "v1"
+  derived: "v1/derived"
+  models: "v1/work/models"
+  logs: "v1/work/logs"
+
+seeds:
+  global: 20261020
+  folds: 20261021
+  train: 20261022
+  bootstrap: 20261023
+  perturb: 20261024
+
+dataset_counts_expected:        # reconciled by python/01_manifest.py (hard assertions)
+  images_total: 48510
+  labeled_frames: 10662
+  labeled_patients: 99
+  center1_patients: 61
+  center2_patients: 38
+  center1_frames: 9593
+  center2_frames: 1069
+  stream_frames: 37848
+  stream_patients: 20
+
+domains:                         # fixed colour per domain across ALL exhibits (Okabe-Ito)
+  D1: {center: 1, size: [1920, 1080], label: "Center 1, 1920x1080", colour: "#0072B2"}
+  D2: {center: 1, size: [1280, 720],  label: "Center 1, 1280x720",  colour: "#D55E00"}
+  D3: {center: 2, size: [720, 576],   label: "Center 2, 720x576",   colour: "#009E73"}
+
+okabe_ito: ["#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7", "#000000"]
+
+fov:
+  canonical_diameter_px: 512     # optics computed after resampling the FOV bbox to 512 x 512
+  segmenter_input_px: 384        # segmenter input: FOV-square crop resized to 384 x 384
+  erode_frac: 0.02               # FOV disk eroded by 2% of radius before metrics
+  min_found_rate: 0.99           # Gate G1 (passed 2026-10-20: 48,482 / 48,510 = 99.94%)
+  exclude_not_found: true        # frames with fov_found == False (28: 3 labeled Center 1, 25 stream) are excluded from training, scoring, gate and stream analyses and reported as exclusions
+
+optical_metrics:                 # exact column names in optics.parquet (order fixed)
+  - lum_mean          # mean luminance (Rec.709 Y, 0-1)
+  - contrast_rms      # RMS contrast of luminance
+  - contrast_local    # mean local block contrast (16 px blocks on 512 canvas)
+  - sharp_tenengrad   # Tenengrad gradient energy (Sobel), mean over FOV
+  - under_frac        # fraction of FOV pixels with Y < 0.10
+  - sat_frac          # fraction of FOV pixels with any channel >= 0.98
+  - spec_frac         # specular/glare fraction (adaptive brightness-aware threshold)
+  - haze_dcp          # mean dark-channel (15 px patch), scatter/turbidity proxy
+  - red_dom           # R / (R + G + B), blood-absorption proxy
+  - illum_slope       # radial illumination fall-off slope (luminance vs normalised radius)
+  - lum_entropy       # Shannon entropy of luminance histogram (bits, 64 bins)
+entropy:
+  roi_dilate_px: 15              # entropy_roi: mean binary entropy inside the predicted mask dilated by this many pixels on the 384 grid
+optical_sensitivity_suffix: "_bg"  # same 11 metrics on the complement of the PREDICTED mask (U-Net)
+
+segmenters:
+  task: "class-agnostic binary instrument mask (mask > 0)"
+  models:
+    unet: {library: "segmentation_models_pytorch", arch: "Unet", encoder: "resnet34", weights: "imagenet"}
+    segformer: {library: "transformers", arch: "SegformerForSemanticSegmentation", checkpoint: "nvidia/mit-b0", num_labels: 1}
+  mask_threshold: 0.5           # probability cut for the binary instrument mask at inference
+  augmentation: "geometric only (flip, rotate, scale, translate); NO photometric augmentation"
+  loss: "BCE + Dice"
+  optimizer: {name: "AdamW", lr: 3.0e-4, schedule: "cosine"}
+  batch_size: 16
+  epochs: {unet: 20, segformer: 20}   # fixed at Gate G2 from the fold-0 pilot, frozen in analysis_lock.yaml
+  cv_folds: 5                   # patient-grouped, Center 1 only; balanced on frame count, stratified by domain
+  final_models: "one per architecture trained on all Center 1"
+  device: "mps"
+  env: {PYTORCH_ENABLE_MPS_FALLBACK: 1}
+
+endpoints:
+  risk: "1 - IoU on binary instrument mask, native resolution, inside the FOV"
+  primary: "external (Center 2) AURC of the locked optical gate vs random ordering; patient-clustered bootstrap CI"
+  failure_iou_threshold: 0.90   # secondary binary endpoint (IoU < 0.90); revised from 0.75 at Gate G2 (see config/G2_decision.md); frozen in analysis_lock.yaml
+  sens_levels: [0.50, 0.90]
+  coverage_levels: [0.90, 0.80]
+  min_external_failure_events: 30
+  min_external_patients_with_events: 10
+  noninferiority_margin_aurc: null   # none retained at G2 (see config/G2_decision.md); comparisons are descriptive
+  entropy_baseline_rule: "of entropy_fov / entropy_roi, use the one with lower Center 1 OOF AURC (chosen on Center 1 only)"
+
+gate:
+  method: "penalised logistic regression (glmnet, alpha=0.5) on natural splines (df=3) of the 11 metrics"
+  outcome_for_fit: "failure = IoU < failure_iou_threshold (binary)"
+  risk_score: "predicted failure probability (monotone transform ranks frames by risk)"
+  cross_fit_folds: "same patient-grouped folds as the segmenters"
+  lock: "final gate fit on all Center 1 OOF data; RDS SHA-256 recorded in analysis_lock.yaml BEFORE 04b_external_eval.R"
+  sensitivity: ["xgboost", "GAM (mgcv)", "+ domain covariate", "background-only features", "device-normalised features", "leave-one-domain-out"]
+
+perturbation:
+  n_frames: 400                 # OOF frames with IoU >= 0.90, stratified by domain, scenario, instrument
+  severities: [0, 1, 2, 3, 4, 5]
+  families: [defocus, haze, exposure, blood_absorption, glare, noise]   # six families
+  exposure_arms: [under, over]    # exposure runs as two arms (linear gain < 1 / gain > 1 with clipping); exports family="exposure_under" / "exposure_over"
+  note: "six physically parameterised families, applied inside the FOV only; exposure reported as two arms"
+  rule_first_below_iou: 0.75
+  min_oof_iou: 0.90             # a frame enters the perturbation set only if its Center 1 out-of-fold IoU is at least this
+  allocation: "equal frames per domain x scenario x instrument cell (shortfalls filled from the remaining cells); balances conditions, not population shares"
+
+stream:
+  expected_frames: 37848
+  coverage_rule: "flag the worst (1 - coverage) share of frames using the threshold fixed on Center 1 OOF"
+  frame_period_s: 1              # data audit: consecutive stream frames are 1 s apart
+  long_run_s: 5                  # a run of consecutive flagged frames at least this long counts as sustained
+  expected_not_found: 25         # Gate G1: stream frames without a detected field of view (excluded)
+  expected_not_found_center1_labeled: 3   # Gate G1: labeled Center 1 frames without a field of view (P5-9-1066, P49-1-0019, P57-1-0016)
+  expected_not_found_center2_labeled: 0   # Gate G1: none in Center 2
+
+sensitivity:                     # exploratory variants of the external comparison (R/08_sensitivity.R)
+  xgboost:
+    rounds: 500                  # upper bound; the number of rounds used comes from patient-grouped CV on Center 1
+    patience: 20                 # early-stopping rounds
+    params: {objective: "binary:logistic", eval_metric: "logloss", eta: 0.05, max_depth: 3, min_child_weight: 5, subsample: 0.8, colsample_bytree: 0.8, nthread: 1}
+
+statistics:
+  bootstrap_resamples: 2000
+  bootstrap_unit: "patient (stratified by domain internally)"
+  ci_level: 0.95
+  primary_aggregation: "pooled frame-level"
+  sensitivity_aggregation: "patient-macro-average"
+  vif_flag: 5                    # Table 2 footnotes any optical-metric VIF above this value
+  robust_vcov: "sandwich::vcovCL (cluster = patient)"
+  secondary_label: "exploratory (no multiplicity claims)"
+
+exhibits:
+  width_mm: 180
+  dpi: 300
+  font: "Helvetica"
+  formats_fig: [png, tif, pdf]
+  tif_compression: LZW
+  tables: "flextable -> .docx three-line style + .csv"
+
+manuscript:
+  methods_words: 650
+  results_words: 950
+  tolerance: 5
+  body_only: true
+  rules:
+    - "no digits typed in prose; numbers come from results.json via {{key}} (except 'Figure N' / 'Table N')"
+    - "no em-dashes"
+    - "report nulls at equal precision"
+    - "no invented citations; every reference verified in PubMed before use"
+    - "surgeon-readable; define each statistic once, plainly"
+    - "unslop pass"
+    - "write to what the data support (association and ranking, not injury prevention)"

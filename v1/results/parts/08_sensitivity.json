@@ -1,0 +1,295 @@
+{
+  "script": "08_sensitivity.R",
+  "entries": {
+    "sens_background_only_aurc_ci": {
+      "display": "0.046 (95% CI 0.040 to 0.053)",
+      "raw": [0.0460252168347243, 0.0399146307981137, 0.0533108991376555],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_background_only_diff_ens_ci": {
+      "display": "0.025 (95% CI 0.020 to 0.030)",
+      "raw": [0.0245206169054059, 0.0195147623127868, 0.0303691077282493],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_background_only_diff_entropy_ci": {
+      "display": "0.024 (95% CI 0.020 to 0.030)",
+      "raw": [0.0244947423378384, 0.0196175367106613, 0.0298564554223065],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_background_only_diff_random_ci": {
+      "display": "0.000 (95% CI 0.000 to 0.000)",
+      "raw": [-4.16333634234434e-17, -4.16507106582031e-16, 4.9960036108132e-16],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_background_only_excluded": {
+      "display": "0",
+      "raw": 0,
+      "note": "Center 2 frames without finite background-only metrics"
+    },
+    "sens_background_only_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "sens_device_norm_aurc_ci": {
+      "display": "0.046 (95% CI 0.040 to 0.053)",
+      "raw": [0.0460252168347243, 0.0399146307981137, 0.0533108991376555],
+      "note": "exploratory; gate fitted on Center 1 only; the D3 normaliser uses Center 2 optics with no outcomes; not part of the locked primary"
+    },
+    "sens_device_norm_diff_ens_ci": {
+      "display": "0.025 (95% CI 0.020 to 0.030)",
+      "raw": [0.0245206169054059, 0.0195147623127868, 0.0303691077282493],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; gate fitted on Center 1 only; the D3 normaliser uses Center 2 optics with no outcomes; not part of the locked primary"
+    },
+    "sens_device_norm_diff_entropy_ci": {
+      "display": "0.024 (95% CI 0.020 to 0.030)",
+      "raw": [0.0244947423378384, 0.0196175367106613, 0.0298564554223065],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; gate fitted on Center 1 only; the D3 normaliser uses Center 2 optics with no outcomes; not part of the locked primary"
+    },
+    "sens_device_norm_diff_random_ci": {
+      "display": "0.000 (95% CI 0.000 to 0.000)",
+      "raw": [-4.16333634234434e-17, -4.16507106582031e-16, 4.9960036108132e-16],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; gate fitted on Center 1 only; the D3 normaliser uses Center 2 optics with no outcomes; not part of the locked primary"
+    },
+    "sens_device_norm_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "sens_domain_cov_aurc_ci": {
+      "display": "0.048 (95% CI 0.040 to 0.056)",
+      "raw": [0.0476041031660996, 0.0397308033764061, 0.056096924057356],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_domain_cov_diff_ens_ci": {
+      "display": "0.026 (95% CI 0.019 to 0.033)",
+      "raw": [0.0260995032367812, 0.0192758959279652, 0.0332538212643222],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_domain_cov_diff_entropy_ci": {
+      "display": "0.026 (95% CI 0.019 to 0.033)",
+      "raw": [0.0260736286692138, 0.0194736159987278, 0.0330176015497349],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_domain_cov_diff_random_ci": {
+      "display": "0.002 (95% CI -0.002 to 0.005)",
+      "raw": [0.00157888633137533, -0.00217174042686206, 0.00549221457301878],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_domain_cov_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "sens_gam_aurc_ci": {
+      "display": "0.038 (95% CI 0.032 to 0.046)",
+      "raw": [0.0377275321093468, 0.0315316901011169, 0.0462041962440646],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_gam_diff_ens_ci": {
+      "display": "0.016 (95% CI 0.011 to 0.024)",
+      "raw": [0.0162229321800284, 0.0108088620998685, 0.0236240681611548],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_gam_diff_entropy_ci": {
+      "display": "0.016 (95% CI 0.011 to 0.023)",
+      "raw": [0.0161970576124609, 0.0110760571500731, 0.0231832404972473],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_gam_diff_random_ci": {
+      "display": "-0.008 (95% CI -0.012 to -0.005)",
+      "raw": [-0.00829768472537752, -0.0117762191773096, -0.00475413372941219],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_gam_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "sens_locked_aurc_ci": {
+      "display": "0.048 (95% CI 0.040 to 0.057)",
+      "raw": [0.0478704570778232, 0.0397883109317383, 0.0565648502272512],
+      "note": "locked primary gate re-evaluated here (reference)"
+    },
+    "sens_locked_diff_ens_ci": {
+      "display": "0.026 (95% CI 0.019 to 0.034)",
+      "raw": [0.0263658571485048, 0.0194152151865553, 0.0336448095847925],
+      "note": "gate minus ens AURC, negative favours the gate; locked primary gate re-evaluated here (reference)"
+    },
+    "sens_locked_diff_entropy_ci": {
+      "display": "0.026 (95% CI 0.020 to 0.033)",
+      "raw": [0.0263399825809373, 0.0195384947886991, 0.0334256973480393],
+      "note": "gate minus entropy AURC, negative favours the gate; locked primary gate re-evaluated here (reference)"
+    },
+    "sens_locked_diff_random_ci": {
+      "display": "0.002 (95% CI -0.002 to 0.006)",
+      "raw": [0.00184524024309887, -0.00209589625513213, 0.00585133966817696],
+      "note": "gate minus random AURC, negative favours the gate; locked primary gate re-evaluated here (reference)"
+    },
+    "sens_locked_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "sens_lodo_d1_to_d2_aurc_ci": {
+      "display": "0.054 (95% CI 0.045 to 0.064)",
+      "raw": [0.0544222397606881, 0.0448566563450509, 0.0641594479033816],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d1_to_d2_diff_ens_ci": {
+      "display": "0.027 (95% CI 0.022 to 0.031)",
+      "raw": [0.0269308848420925, 0.0218711664801381, 0.0310380505471036],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d1_to_d2_diff_entropy_ci": {
+      "display": "0.026 (95% CI 0.022 to 0.030)",
+      "raw": [0.026174468872333, 0.0216877632939113, 0.0300060608415742],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d1_to_d2_diff_random_ci": {
+      "display": "-0.013 (95% CI -0.023 to -0.002)",
+      "raw": [-0.0125034205511594, -0.0228235640186697, -0.0022458774787013],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d1_to_d2_n_frames": {
+      "display": "1,617",
+      "raw": 1617,
+      "note": ""
+    },
+    "sens_lodo_d1_to_d3_aurc_ci": {
+      "display": "0.048 (95% CI 0.040 to 0.057)",
+      "raw": [0.0483183854374528, 0.0399933135514945, 0.0573341107906254],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d1_to_d3_diff_ens_ci": {
+      "display": "0.027 (95% CI 0.020 to 0.034)",
+      "raw": [0.0268137855081344, 0.0196747465873677, 0.0342150082510438],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d1_to_d3_diff_entropy_ci": {
+      "display": "0.027 (95% CI 0.020 to 0.034)",
+      "raw": [0.0267879109405669, 0.0197071477468966, 0.0340609541434974],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d1_to_d3_diff_random_ci": {
+      "display": "0.002 (95% CI -0.002 to 0.006)",
+      "raw": [0.00229316860272848, -0.00150566233716539, 0.00634230891037726],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d1_to_d3_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "sens_lodo_d2_to_d1_aurc_ci": {
+      "display": "0.051 (95% CI 0.043 to 0.060)",
+      "raw": [0.0511174752020676, 0.0429267585073979, 0.0603269074645978],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d2_to_d1_diff_ens_ci": {
+      "display": "0.028 (95% CI 0.022 to 0.033)",
+      "raw": [0.0279825214740936, 0.0224218960824894, 0.033227685525451],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d2_to_d1_diff_entropy_ci": {
+      "display": "0.029 (95% CI 0.023 to 0.034)",
+      "raw": [0.0286322990095188, 0.0230593178329077, 0.0340346834109595],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d2_to_d1_diff_random_ci": {
+      "display": "0.000 (95% CI 0.000 to 0.000)",
+      "raw": [-1.00613961606655e-15, -3.92099547275038e-15, 3.62227609018717e-15],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d2_to_d1_n_frames": {
+      "display": "7,973",
+      "raw": 7973,
+      "note": ""
+    },
+    "sens_lodo_d2_to_d3_aurc_ci": {
+      "display": "0.046 (95% CI 0.040 to 0.053)",
+      "raw": [0.0460252168347243, 0.0399146307981137, 0.0533108991376555],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d2_to_d3_diff_ens_ci": {
+      "display": "0.025 (95% CI 0.020 to 0.030)",
+      "raw": [0.0245206169054059, 0.0195147623127868, 0.0303691077282493],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d2_to_d3_diff_entropy_ci": {
+      "display": "0.024 (95% CI 0.020 to 0.030)",
+      "raw": [0.0244947423378384, 0.0196175367106613, 0.0298564554223065],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d2_to_d3_diff_random_ci": {
+      "display": "0.000 (95% CI 0.000 to 0.000)",
+      "raw": [-4.16333634234434e-17, -4.16507106582031e-16, 4.9960036108132e-16],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_lodo_d2_to_d3_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "sens_n_ext_beat_random": {
+      "display": "1",
+      "raw": 1,
+      "note": "of those, variants whose 95% CI for gate minus random AURC lies below zero"
+    },
+    "sens_n_ext_variants": {
+      "display": "8",
+      "raw": 8,
+      "note": "exploratory variants scored on Center 2, excluding the locked reference"
+    },
+    "sens_patient_macro_aurc_ci": {
+      "display": "0.048 (95% CI 0.041 to 0.055)",
+      "raw": [0.0475711642247375, 0.0405384382700138, 0.0551525770492447],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_patient_macro_diff_ens_ci": {
+      "display": "0.023 (95% CI 0.017 to 0.029)",
+      "raw": [0.0228535795459247, 0.0173154878077529, 0.0291649118675493],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_patient_macro_diff_entropy_ci": {
+      "display": "0.022 (95% CI 0.017 to 0.028)",
+      "raw": [0.0224931476299541, 0.017326359323844, 0.0282567384605533],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_patient_macro_diff_random_ci": {
+      "display": "0.001 (95% CI -0.002 to 0.004)",
+      "raw": [0.0010463888657081, -0.00185316327433595, 0.00373465292206126],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_patient_macro_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "sens_xgboost_aurc_ci": {
+      "display": "0.041 (95% CI 0.032 to 0.056)",
+      "raw": [0.0413708116595672, 0.0315999765724072, 0.0561718740429304],
+      "note": "exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_xgboost_diff_ens_ci": {
+      "display": "0.020 (95% CI 0.011 to 0.034)",
+      "raw": [0.0198662117302488, 0.0107378568478408, 0.0339036161133016],
+      "note": "gate minus ens AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_xgboost_diff_entropy_ci": {
+      "display": "0.020 (95% CI 0.011 to 0.033)",
+      "raw": [0.0198403371626813, 0.0108808314313947, 0.033267567298],
+      "note": "gate minus entropy AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_xgboost_diff_random_ci": {
+      "display": "-0.005 (95% CI -0.012 to 0.005)",
+      "raw": [-0.0046544051751571, -0.0120467653542365, 0.00531525201439661],
+      "note": "gate minus random AURC, negative favours the gate; exploratory; fitted on Center 1 only; not part of the locked primary"
+    },
+    "sens_xgboost_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    }
+  }
+}

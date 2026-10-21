@@ -1,0 +1,525 @@
+{
+  "script": "02_cohort.R",
+  "entries": {
+    "fov_diam_median_d1": {
+      "display": "955 px",
+      "raw": 954.700628977415,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_median_d2": {
+      "display": "697 px",
+      "raw": 696.568221046936,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_median_d3": {
+      "display": "542 px",
+      "raw": 541.872413282206,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_median_lab": {
+      "display": "931 px",
+      "raw": 930.623394787773,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_q1_d1": {
+      "display": "918 px",
+      "raw": 917.645539879399,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_q1_d2": {
+      "display": "660 px",
+      "raw": 660.075276837054,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_q1_d3": {
+      "display": "534 px",
+      "raw": 533.702801031814,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_q1_lab": {
+      "display": "733 px",
+      "raw": 733.181968284854,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_q3_d1": {
+      "display": "998 px",
+      "raw": 998.15220799829,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_q3_d2": {
+      "display": "712 px",
+      "raw": 711.586810942946,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_q3_d3": {
+      "display": "560 px",
+      "raw": 559.792659525247,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_diam_q3_lab": {
+      "display": "974 px",
+      "raw": 974.229012150608,
+      "note": "2 * fov_r, native pixels, frames with a found field of view (D3: inscribed circle), rounded half up"
+    },
+    "fov_found_rate": {
+      "display": "99.94%",
+      "raw": 0.999422799422799,
+      "note": "frames with a detected field of view, all 48,510 images"
+    },
+    "fov_found_rate_d1": {
+      "display": "99.99%",
+      "raw": 0.999874592425382,
+      "note": "labeled frames"
+    },
+    "fov_found_rate_d2": {
+      "display": "99.88%",
+      "raw": 0.998764669549104,
+      "note": "labeled frames"
+    },
+    "fov_found_rate_d3": {
+      "display": "100.00%",
+      "raw": 1,
+      "note": "labeled frames"
+    },
+    "fov_found_rate_lab": {
+      "display": "99.97%",
+      "raw": 0.999718626899268,
+      "note": "labeled frames"
+    },
+    "fpp_max_d1": {
+      "display": "1,159",
+      "raw": 1159,
+      "note": ""
+    },
+    "fpp_max_d2": {
+      "display": "238",
+      "raw": 238,
+      "note": ""
+    },
+    "fpp_max_d3": {
+      "display": "94",
+      "raw": 94,
+      "note": ""
+    },
+    "fpp_max_lab": {
+      "display": "1,159",
+      "raw": 1159,
+      "note": ""
+    },
+    "fpp_median_d1": {
+      "display": "144",
+      "raw": 144,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_median_d2": {
+      "display": "59",
+      "raw": 59,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_median_d3": {
+      "display": "25",
+      "raw": 25,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_median_lab": {
+      "display": "51",
+      "raw": 51,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_min_d1": {
+      "display": "23",
+      "raw": 23,
+      "note": ""
+    },
+    "fpp_min_d2": {
+      "display": "28",
+      "raw": 28,
+      "note": ""
+    },
+    "fpp_min_d3": {
+      "display": "3",
+      "raw": 3,
+      "note": ""
+    },
+    "fpp_min_lab": {
+      "display": "3",
+      "raw": 3,
+      "note": ""
+    },
+    "fpp_q1_d1": {
+      "display": "81",
+      "raw": 81,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_q1_d2": {
+      "display": "50",
+      "raw": 49.5,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_q1_d3": {
+      "display": "19",
+      "raw": 19.25,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_q1_lab": {
+      "display": "30",
+      "raw": 30,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_q3_d1": {
+      "display": "200",
+      "raw": 200,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_q3_d2": {
+      "display": "88",
+      "raw": 88.25,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_q3_d3": {
+      "display": "35",
+      "raw": 34.5,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "fpp_q3_lab": {
+      "display": "135",
+      "raw": 135,
+      "note": "labeled frames per patient, shown to whole frames (rounded half up)"
+    },
+    "n_channel_big_frames": {
+      "display": "2,011",
+      "raw": 2011,
+      "note": ""
+    },
+    "n_channel_big_patients": {
+      "display": "10",
+      "raw": 10,
+      "note": ""
+    },
+    "n_channel_small_frames": {
+      "display": "8,651",
+      "raw": 8651,
+      "note": ""
+    },
+    "n_channel_small_patients": {
+      "display": "89",
+      "raw": 89,
+      "note": ""
+    },
+    "n_cv_folds": {
+      "display": "5",
+      "raw": 5,
+      "note": "patient-grouped folds inside Center 1"
+    },
+    "n_difficult_d1": {
+      "display": "5,854",
+      "raw": 5854,
+      "note": ""
+    },
+    "n_difficult_d2": {
+      "display": "1,484",
+      "raw": 1484,
+      "note": ""
+    },
+    "n_difficult_d3": {
+      "display": "643",
+      "raw": 643,
+      "note": ""
+    },
+    "n_difficult_lab": {
+      "display": "7,981",
+      "raw": 7981,
+      "note": ""
+    },
+    "n_excl_fov_c1": {
+      "display": "3",
+      "raw": 3,
+      "note": ""
+    },
+    "n_excl_fov_c2": {
+      "display": "0",
+      "raw": 0,
+      "note": ""
+    },
+    "n_excl_fov_stream": {
+      "display": "25",
+      "raw": 25,
+      "note": ""
+    },
+    "n_excl_fov_total": {
+      "display": "28",
+      "raw": 28,
+      "note": ""
+    },
+    "n_format_jpg_frames": {
+      "display": "4,151",
+      "raw": 4151,
+      "note": ""
+    },
+    "n_format_png_frames": {
+      "display": "6,511",
+      "raw": 6511,
+      "note": ""
+    },
+    "n_fov_found": {
+      "display": "48,482",
+      "raw": 48482,
+      "note": ""
+    },
+    "n_fov_notfound_d1": {
+      "display": "1",
+      "raw": 1,
+      "note": ""
+    },
+    "n_fov_notfound_d2": {
+      "display": "2",
+      "raw": 2,
+      "note": ""
+    },
+    "n_fov_notfound_d3": {
+      "display": "0",
+      "raw": 0,
+      "note": ""
+    },
+    "n_fov_notfound_lab": {
+      "display": "3",
+      "raw": 3,
+      "note": ""
+    },
+    "n_fov_total": {
+      "display": "48,510",
+      "raw": 48510,
+      "note": ""
+    },
+    "n_frames_c1": {
+      "display": "9,593",
+      "raw": 9593,
+      "note": ""
+    },
+    "n_frames_c1_analysed": {
+      "display": "9,590",
+      "raw": 9590,
+      "note": ""
+    },
+    "n_frames_c2": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "n_frames_c2_analysed": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "n_frames_d1": {
+      "display": "7,974",
+      "raw": 7974,
+      "note": ""
+    },
+    "n_frames_d2": {
+      "display": "1,619",
+      "raw": 1619,
+      "note": ""
+    },
+    "n_frames_d3": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "n_frames_labeled": {
+      "display": "10,662",
+      "raw": 10662,
+      "note": ""
+    },
+    "n_frames_labeled_analysed": {
+      "display": "10,659",
+      "raw": 10659,
+      "note": ""
+    },
+    "n_frames_stream": {
+      "display": "37,848",
+      "raw": 37848,
+      "note": ""
+    },
+    "n_frames_stream_analysed": {
+      "display": "37,823",
+      "raw": 37823,
+      "note": ""
+    },
+    "n_images_total": {
+      "display": "48,510",
+      "raw": 48510,
+      "note": ""
+    },
+    "n_instr_bipolar_frames": {
+      "display": "2,933",
+      "raw": 2933,
+      "note": ""
+    },
+    "n_instr_dissector_frames": {
+      "display": "241",
+      "raw": 241,
+      "note": ""
+    },
+    "n_instr_drill_frames": {
+      "display": "1,283",
+      "raw": 1283,
+      "note": ""
+    },
+    "n_instr_forceps_frames": {
+      "display": "4,918",
+      "raw": 4918,
+      "note": ""
+    },
+    "n_instr_punch_frames": {
+      "display": "880",
+      "raw": 880,
+      "note": ""
+    },
+    "n_instr_scissor_frames": {
+      "display": "407",
+      "raw": 407,
+      "note": ""
+    },
+    "n_normal_d1": {
+      "display": "2,120",
+      "raw": 2120,
+      "note": ""
+    },
+    "n_normal_d2": {
+      "display": "135",
+      "raw": 135,
+      "note": ""
+    },
+    "n_normal_d3": {
+      "display": "426",
+      "raw": 426,
+      "note": ""
+    },
+    "n_normal_lab": {
+      "display": "2,681",
+      "raw": 2681,
+      "note": ""
+    },
+    "n_patients_c1": {
+      "display": "61",
+      "raw": 61,
+      "note": ""
+    },
+    "n_patients_c2": {
+      "display": "38",
+      "raw": 38,
+      "note": ""
+    },
+    "n_patients_d1": {
+      "display": "41",
+      "raw": 41,
+      "note": ""
+    },
+    "n_patients_d2": {
+      "display": "20",
+      "raw": 20,
+      "note": ""
+    },
+    "n_patients_d3": {
+      "display": "38",
+      "raw": 38,
+      "note": ""
+    },
+    "n_patients_labeled": {
+      "display": "99",
+      "raw": 99,
+      "note": ""
+    },
+    "n_patients_stream": {
+      "display": "20",
+      "raw": 20,
+      "note": ""
+    },
+    "n_region_cervical_frames": {
+      "display": "2,436",
+      "raw": 2436,
+      "note": ""
+    },
+    "n_region_cervical_patients": {
+      "display": "19",
+      "raw": 19,
+      "note": ""
+    },
+    "n_region_lumbar_frames": {
+      "display": "8,226",
+      "raw": 8226,
+      "note": ""
+    },
+    "n_region_lumbar_patients": {
+      "display": "80",
+      "raw": 80,
+      "note": ""
+    },
+    "pct_channel_big": {
+      "display": "18.9%",
+      "raw": 0.188613768523729,
+      "note": ""
+    },
+    "pct_difficult_d1": {
+      "display": "73.4%",
+      "raw": 0.734135941810885,
+      "note": ""
+    },
+    "pct_difficult_d2": {
+      "display": "91.7%",
+      "raw": 0.916615194564546,
+      "note": ""
+    },
+    "pct_difficult_d3": {
+      "display": "60.1%",
+      "raw": 0.601496725912067,
+      "note": ""
+    },
+    "pct_difficult_lab": {
+      "display": "74.9%",
+      "raw": 0.748546238979554,
+      "note": ""
+    },
+    "pct_normal_d1": {
+      "display": "26.6%",
+      "raw": 0.265864058189115,
+      "note": ""
+    },
+    "pct_normal_d2": {
+      "display": "8.3%",
+      "raw": 0.083384805435454,
+      "note": ""
+    },
+    "pct_normal_d3": {
+      "display": "39.9%",
+      "raw": 0.398503274087933,
+      "note": ""
+    },
+    "pct_normal_lab": {
+      "display": "25.1%",
+      "raw": 0.251453761020446,
+      "note": ""
+    },
+    "pct_png_d1": {
+      "display": "47.9%",
+      "raw": 0.479433157762729,
+      "note": ""
+    },
+    "pct_png_d2": {
+      "display": "100.0%",
+      "raw": 1,
+      "note": ""
+    },
+    "pct_png_d3": {
+      "display": "100.0%",
+      "raw": 1,
+      "note": ""
+    },
+    "pct_png_lab": {
+      "display": "61.1%",
+      "raw": 0.610673419621084,
+      "note": ""
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "script": "04a_gate_fit_lock.R",
+  "entries": {
+    "gate_c1_failure_events": {
+      "display": "1,293",
+      "raw": 1293,
+      "note": ""
+    },
+    "gate_c1_failure_patients": {
+      "display": "61",
+      "raw": 61,
+      "note": ""
+    },
+    "gate_c1_failure_rate": {
+      "display": "13.5%",
+      "raw": 0.134827945776851,
+      "note": ""
+    },
+    "gate_c1_fov_excluded": {
+      "display": "0",
+      "raw": 0,
+      "note": "Center 1 frames with fov_found == FALSE dropped by 04a (0 when predictions.parquet already excludes them)"
+    },
+    "gate_c1_lambda": {
+      "display": "0.0994",
+      "raw": 0.0993963031214929,
+      "note": "1-SE penalty of the final gate"
+    },
+    "gate_c1_n_frames": {
+      "display": "9,590",
+      "raw": 9590,
+      "note": ""
+    },
+    "gate_c1_n_patients": {
+      "display": "61",
+      "raw": 61,
+      "note": ""
+    },
+    "gate_elastic_alpha": {
+      "display": "0.5",
+      "raw": 0.5,
+      "note": ""
+    },
+    "gate_entropy_choice": {
+      "display": "region around the predicted mask",
+      "raw": "region around the predicted mask",
+      "note": "lower Center 1 OOF AURC; entropy_roi"
+    },
+    "gate_entropy_fov_aurc_c1": {
+      "display": "0.034",
+      "raw": 0.0335588512203066,
+      "note": "Center 1 OOF, U-Net"
+    },
+    "gate_entropy_roi_aurc_c1": {
+      "display": "0.023",
+      "raw": 0.0233989354110149,
+      "note": "Center 1 OOF, U-Net"
+    },
+    "gate_failure_iou": {
+      "display": "0.90",
+      "raw": 0.9,
+      "note": ""
+    },
+    "gate_inner_folds": {
+      "display": "5",
+      "raw": 5,
+      "note": ""
+    },
+    "gate_n_features": {
+      "display": "11",
+      "raw": 11,
+      "note": ""
+    },
+    "gate_spline_df": {
+      "display": "3",
+      "raw": 3,
+      "note": ""
+    }
+  }
+}

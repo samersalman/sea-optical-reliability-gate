@@ -1,0 +1,8 @@
+<!-- Fixture for test_render.R. Digits such as 12 or 2026 inside a comment are ignored. -->
+## Data
+
+We studied {{n_frames}} annotated frames from {{n_patients}} patients, of whom {{n_patients_c1}} came from the training center [3]. Domains D1 and D2 were pooled for training, and the external center was withheld (Figure 1A, Table 1).
+
+## Models
+
+Two segmenters were trained: a U-Net with a ResNet34 encoder and SegFormer-B0. Training used {{cv_folds}} patient-grouped folds, and overlap was scored with the Dice coefficient. Reporting follows TRIPOD+AI [4-6]. Analyses ran in R {{software_r}}.

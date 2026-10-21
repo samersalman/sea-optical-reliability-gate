@@ -1,0 +1,660 @@
+{
+  "script": "06_perturb.R",
+  "entries": {
+    "perturb_baseline_iou_segformer": {
+      "display": "0.976",
+      "raw": 0.975711270363463,
+      "note": "median IoU, severity 0, recomputed on the perturbation path"
+    },
+    "perturb_baseline_iou_unet": {
+      "display": "0.978",
+      "raw": 0.978494705798339,
+      "note": "median IoU, severity 0, recomputed on the perturbation path"
+    },
+    "perturb_iou_max_sev_segformer_blood_absorption": {
+      "display": "0.96",
+      "raw": 0.964069643179947,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_segformer_defocus": {
+      "display": "0.95",
+      "raw": 0.94642734334682,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_segformer_exposure_over": {
+      "display": "0.96",
+      "raw": 0.957857415503782,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_segformer_exposure_under": {
+      "display": "0.97",
+      "raw": 0.973683098600272,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_segformer_glare": {
+      "display": "0.96",
+      "raw": 0.964816367758038,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_segformer_haze": {
+      "display": "0.94",
+      "raw": 0.941750576462884,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_segformer_noise": {
+      "display": "0.94",
+      "raw": 0.939396805954365,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_unet_blood_absorption": {
+      "display": "0.97",
+      "raw": 0.971301883756163,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_unet_defocus": {
+      "display": "0.93",
+      "raw": 0.932547269596662,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_unet_exposure_over": {
+      "display": "0.96",
+      "raw": 0.961642846684965,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_unet_exposure_under": {
+      "display": "0.98",
+      "raw": 0.977470700748572,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_unet_glare": {
+      "display": "0.97",
+      "raw": 0.96890228191454,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_unet_haze": {
+      "display": "0.93",
+      "raw": 0.934689436960842,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_iou_max_sev_unet_noise": {
+      "display": "0.88",
+      "raw": 0.881661032576123,
+      "note": "median IoU at the highest severity"
+    },
+    "perturb_n_expected_ok": {
+      "display": "11",
+      "raw": 11,
+      "note": "expected pairs with the expected sign and |rho| >= 0.5"
+    },
+    "perturb_n_expected_pairs": {
+      "display": "11",
+      "raw": 11,
+      "note": ""
+    },
+    "perturb_n_families": {
+      "display": "7",
+      "raw": 7,
+      "note": ""
+    },
+    "perturb_n_frames": {
+      "display": "400",
+      "raw": 400,
+      "note": ""
+    },
+    "perturb_n_patients": {
+      "display": "60",
+      "raw": 60,
+      "note": ""
+    },
+    "perturb_n_reached_segformer": {
+      "display": "0",
+      "raw": 0,
+      "note": "families whose median IoU falls below the rule within the severity grid"
+    },
+    "perturb_n_reached_unet": {
+      "display": "0",
+      "raw": 0,
+      "note": "families whose median IoU falls below the rule within the severity grid"
+    },
+    "perturb_n_severities": {
+      "display": "5",
+      "raw": 5,
+      "note": ""
+    },
+    "perturb_rho_abs_min_expected": {
+      "display": "0.53",
+      "raw": 0.527580194211441,
+      "note": ""
+    },
+    "perturb_rho_blood_absorption_contrast_local": {
+      "display": "-0.40 (95% CI -0.43 to -0.37)",
+      "raw": [-0.398234606511418, -0.429890007040284, -0.371664463486673],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_contrast_rms": {
+      "display": "-0.46 (95% CI -0.51 to -0.42)",
+      "raw": [-0.461239453080175, -0.507305325207307, -0.424258681283493],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_haze_dcp": {
+      "display": "-0.73 (95% CI -0.76 to -0.70)",
+      "raw": [-0.727150007180317, -0.761930382339114, -0.695066590057088],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_illum_slope": {
+      "display": "-0.05 (95% CI -0.09 to -0.02)",
+      "raw": [-0.0544360381248084, -0.089281495793323, -0.0177198281206859],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_lum_entropy": {
+      "display": "-0.59 (95% CI -0.64 to -0.55)",
+      "raw": [-0.594969983152453, -0.635940106651636, -0.553596313544056],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_lum_mean": {
+      "display": "-0.72 (95% CI -0.77 to -0.67)",
+      "raw": [-0.722451301263758, -0.770626354250071, -0.669709373170283],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_red_dom": {
+      "display": "0.81 (95% CI 0.78 to 0.84)",
+      "raw": [0.810475180977514, 0.775015875351217, 0.843739269876131],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_sat_frac": {
+      "display": "-0.41 (95% CI -0.42 to -0.39)",
+      "raw": [-0.406367154606535, -0.423469214175265, -0.390487142968709],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_sharp_tenengrad": {
+      "display": "-0.33 (95% CI -0.37 to -0.30)",
+      "raw": [-0.328708690006153, -0.367023324147119, -0.299867312494521],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_spec_frac": {
+      "display": "-0.62 (95% CI -0.65 to -0.59)",
+      "raw": [-0.618407880565676, -0.645122159670705, -0.589133640928443],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_blood_absorption_under_frac": {
+      "display": "0.25 (95% CI 0.22 to 0.28)",
+      "raw": [0.25094793678335, 0.221317887041549, 0.284684881738065],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_contrast_local": {
+      "display": "-0.53 (95% CI -0.56 to -0.49)",
+      "raw": [-0.527580194211441, -0.563492789849892, -0.494376233239683],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_contrast_rms": {
+      "display": "-0.05 (95% CI -0.06 to -0.05)",
+      "raw": [-0.0521322882854826, -0.0629879127044401, -0.0478789118506906],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_haze_dcp": {
+      "display": "0.22 (95% CI 0.19 to 0.25)",
+      "raw": [0.217016263334164, 0.189370867721311, 0.253765063620436],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_illum_slope": {
+      "display": "0.00 (95% CI 0.00 to 0.00)",
+      "raw": [0.000813108893152433, -0.000407036896660056, 0.00357778426705787],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_lum_entropy": {
+      "display": "-0.07 (95% CI -0.08 to -0.05)",
+      "raw": [-0.065386421035795, -0.0826990882608902, -0.0527117600723251],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_lum_mean": {
+      "display": "0.04 (95% CI 0.03 to 0.04)",
+      "raw": [0.0353767515834099, 0.0326759385474409, 0.0441667602643031],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_red_dom": {
+      "display": "-0.04 (95% CI -0.06 to -0.04)",
+      "raw": [-0.0447628947115801, -0.0552805035691087, -0.0396288871333897],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_sat_frac": {
+      "display": "-0.13 (95% CI -0.17 to -0.11)",
+      "raw": [-0.133210905727691, -0.16893427994273, -0.111464499827349],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_sharp_tenengrad": {
+      "display": "-0.76 (95% CI -0.78 to -0.73)",
+      "raw": [-0.759430676741814, -0.784797384048431, -0.734635703788338],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_spec_frac": {
+      "display": "-0.10 (95% CI -0.12 to -0.08)",
+      "raw": [-0.101316676589901, -0.124832161702412, -0.0845858637294805],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_defocus_under_frac": {
+      "display": "-0.14 (95% CI -0.19 to -0.12)",
+      "raw": [-0.144916732700574, -0.185734500055255, -0.117197350909447],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_contrast_local": {
+      "display": "0.28 (95% CI 0.25 to 0.31)",
+      "raw": [0.277520509534677, 0.248202837670106, 0.311604031190773],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_contrast_rms": {
+      "display": "0.36 (95% CI 0.30 to 0.41)",
+      "raw": [0.355073983566275, 0.30498314062714, 0.40634912000823],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_haze_dcp": {
+      "display": "0.71 (95% CI 0.67 to 0.75)",
+      "raw": [0.705360872159179, 0.666940043756707, 0.747523768355607],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_illum_slope": {
+      "display": "-0.01 (95% CI -0.03 to 0.02)",
+      "raw": [-0.00570620030517194, -0.0297425488837236, 0.0166522229524511],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_lum_entropy": {
+      "display": "-0.27 (95% CI -0.35 to -0.19)",
+      "raw": [-0.271597034137658, -0.351269427866548, -0.189818453707512],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_lum_mean": {
+      "display": "0.83 (95% CI 0.79 to 0.87)",
+      "raw": [0.832795354634803, 0.792363601310704, 0.868787317074203],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_red_dom": {
+      "display": "-0.18 (95% CI -0.21 to -0.15)",
+      "raw": [-0.178348339938107, -0.214224370575049, -0.148349509877059],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_sat_frac": {
+      "display": "0.84 (95% CI 0.81 to 0.86)",
+      "raw": [0.83546926951215, 0.811880944600634, 0.859289991719457],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_sharp_tenengrad": {
+      "display": "0.30 (95% CI 0.27 to 0.34)",
+      "raw": [0.301362137121751, 0.271985591026595, 0.341642059514808],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_spec_frac": {
+      "display": "0.74 (95% CI 0.69 to 0.79)",
+      "raw": [0.742737760167388, 0.687975528403837, 0.785888198839102],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_over_under_frac": {
+      "display": "-0.31 (95% CI -0.34 to -0.28)",
+      "raw": [-0.306889764466288, -0.335531539955851, -0.282761286681657],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_contrast_local": {
+      "display": "-0.62 (95% CI -0.65 to -0.59)",
+      "raw": [-0.619342825384097, -0.652833855411873, -0.588788293059409],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_contrast_rms": {
+      "display": "-0.70 (95% CI -0.75 to -0.66)",
+      "raw": [-0.703421242976207, -0.745375781199864, -0.663303801734956],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_haze_dcp": {
+      "display": "-0.78 (95% CI -0.81 to -0.75)",
+      "raw": [-0.777888142972083, -0.811339777348352, -0.747023251986633],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_illum_slope": {
+      "display": "-0.09 (95% CI -0.15 to -0.03)",
+      "raw": [-0.0936790186116052, -0.153276846624461, -0.0304670547485751],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_lum_entropy": {
+      "display": "-0.82 (95% CI -0.85 to -0.79)",
+      "raw": [-0.820270167492471, -0.849188212606581, -0.786973076103489],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_lum_mean": {
+      "display": "-0.90 (95% CI -0.92 to -0.87)",
+      "raw": [-0.896230173467978, -0.920494277010949, -0.86815939775037],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_red_dom": {
+      "display": "0.11 (95% CI 0.09 to 0.14)",
+      "raw": [0.111995625787192, 0.0944560822591965, 0.136246712943411],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_sat_frac": {
+      "display": "-0.61 (95% CI -0.62 to -0.59)",
+      "raw": [-0.609288848054524, -0.62344611554268, -0.593464934483547],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_sharp_tenengrad": {
+      "display": "-0.54 (95% CI -0.58 to -0.50)",
+      "raw": [-0.535204542693747, -0.577868426240417, -0.497504261716485],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_spec_frac": {
+      "display": "-0.68 (95% CI -0.70 to -0.65)",
+      "raw": [-0.676507302792566, -0.697897534716112, -0.650564790559042],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_exposure_under_under_frac": {
+      "display": "0.54 (95% CI 0.48 to 0.59)",
+      "raw": [0.53908598074633, 0.481649095321705, 0.591775138905097],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_contrast_local": {
+      "display": "0.42 (95% CI 0.38 to 0.46)",
+      "raw": [0.416780813946137, 0.379221755320995, 0.460583853187617],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_contrast_rms": {
+      "display": "0.44 (95% CI 0.40 to 0.49)",
+      "raw": [0.440141231722253, 0.395944575053182, 0.489342448006567],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_haze_dcp": {
+      "display": "0.27 (95% CI 0.25 to 0.30)",
+      "raw": [0.273648646269103, 0.24709272979744, 0.302641746856641],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_illum_slope": {
+      "display": "-0.15 (95% CI -0.18 to -0.13)",
+      "raw": [-0.151294597748225, -0.181841463226987, -0.126822995359731],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_lum_entropy": {
+      "display": "0.15 (95% CI 0.12 to 0.18)",
+      "raw": [0.146714917732873, 0.117350338143721, 0.179673126635418],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_lum_mean": {
+      "display": "0.42 (95% CI 0.36 to 0.47)",
+      "raw": [0.415569778223508, 0.361943256707565, 0.468961817277958],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_red_dom": {
+      "display": "-0.10 (95% CI -0.12 to -0.09)",
+      "raw": [-0.0980541008500313, -0.115781534169204, -0.0858712433396175],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_sat_frac": {
+      "display": "0.62 (95% CI 0.56 to 0.69)",
+      "raw": [0.619115585034077, 0.563297824273123, 0.687694823107085],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_sharp_tenengrad": {
+      "display": "0.17 (95% CI 0.15 to 0.20)",
+      "raw": [0.174314488759648, 0.145881035856087, 0.203636569338691],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_spec_frac": {
+      "display": "0.76 (95% CI 0.72 to 0.80)",
+      "raw": [0.757033101115357, 0.7160772375756, 0.803942571560329],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_glare_under_frac": {
+      "display": "-0.02 (95% CI -0.03 to -0.02)",
+      "raw": [-0.0248794878920635, -0.0323904546757343, -0.0210222051398424],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_contrast_local": {
+      "display": "-0.78 (95% CI -0.81 to -0.76)",
+      "raw": [-0.783950716685601, -0.807127278824037, -0.761698887134735],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_contrast_rms": {
+      "display": "-0.82 (95% CI -0.85 to -0.79)",
+      "raw": [-0.820375107488209, -0.846950671429133, -0.794337063992851],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_haze_dcp": {
+      "display": "0.97 (95% CI 0.97 to 0.98)",
+      "raw": [0.971049925395833, 0.965292303241222, 0.975685277412833],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_illum_slope": {
+      "display": "-0.13 (95% CI -0.21 to -0.04)",
+      "raw": [-0.130766151266492, -0.214963702924347, -0.0429020943567419],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_lum_entropy": {
+      "display": "-0.93 (95% CI -0.94 to -0.92)",
+      "raw": [-0.931872444369463, -0.943344285771386, -0.919737271385013],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_lum_mean": {
+      "display": "0.95 (95% CI 0.93 to 0.96)",
+      "raw": [0.951178938551829, 0.931924215185564, 0.964425959497891],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_red_dom": {
+      "display": "-0.76 (95% CI -0.82 to -0.70)",
+      "raw": [-0.759623653811577, -0.815712996856101, -0.69505266366442],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_sat_frac": {
+      "display": "-0.63 (95% CI -0.65 to -0.61)",
+      "raw": [-0.631783567728185, -0.653773263524691, -0.608454605445817],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_sharp_tenengrad": {
+      "display": "-0.67 (95% CI -0.71 to -0.64)",
+      "raw": [-0.670400006934718, -0.70663818210301, -0.637164024858508],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_spec_frac": {
+      "display": "0.22 (95% CI 0.19 to 0.26)",
+      "raw": [0.222249458441668, 0.187250028322065, 0.260444002947684],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_haze_under_frac": {
+      "display": "-0.65 (95% CI -0.65 to -0.65)",
+      "raw": [-0.651046774437044, -0.651046974787612, -0.651046821116112],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_contrast_local": {
+      "display": "0.91 (95% CI 0.90 to 0.93)",
+      "raw": [0.914978865793802, 0.904508132156317, 0.92502691850719],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_contrast_rms": {
+      "display": "0.14 (95% CI 0.12 to 0.16)",
+      "raw": [0.136747731023568, 0.119615353368726, 0.164764138434583],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_haze_dcp": {
+      "display": "-0.86 (95% CI -0.88 to -0.84)",
+      "raw": [-0.856724842991835, -0.877782617455217, -0.837095654157441],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_illum_slope": {
+      "display": "0.01 (95% CI 0.00 to 0.01)",
+      "raw": [0.0070436570293785, 0.00387590972175507, 0.0116315009952865],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_lum_entropy": {
+      "display": "0.34 (95% CI 0.31 to 0.37)",
+      "raw": [0.335666423012175, 0.306175607102423, 0.373048521230511],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_lum_mean": {
+      "display": "-0.10 (95% CI -0.12 to -0.08)",
+      "raw": [-0.0981002321904397, -0.120219350367082, -0.0836512882885729],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_red_dom": {
+      "display": "-0.05 (95% CI -0.08 to -0.01)",
+      "raw": [-0.0459263904838259, -0.0763780282345995, -0.0135060995455908],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_sat_frac": {
+      "display": "0.06 (95% CI 0.04 to 0.09)",
+      "raw": [0.0610172157430895, 0.0413309979381063, 0.0874033187469758],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_sharp_tenengrad": {
+      "display": "0.90 (95% CI 0.88 to 0.92)",
+      "raw": [0.899081865030017, 0.881023645095639, 0.915390946313464],
+      "note": "known limitation: gradient energy counts noise as sharpness"
+    },
+    "perturb_rho_noise_spec_frac": {
+      "display": "-0.03 (95% CI -0.05 to 0.00)",
+      "raw": [-0.0263196763542051, -0.0476838454821615, -0.00453840284247671],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_rho_noise_under_frac": {
+      "display": "0.38 (95% CI 0.32 to 0.44)",
+      "raw": [0.377689809753764, 0.324242375839493, 0.437047742684386],
+      "note": "Spearman rho vs ordinal severity"
+    },
+    "perturb_thr_interp_segformer_blood_absorption": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_segformer_defocus": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_segformer_exposure_over": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_segformer_exposure_under": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_segformer_glare": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_segformer_haze": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_segformer_noise": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_unet_blood_absorption": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_unet_defocus": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_unet_exposure_over": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_unet_exposure_under": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_unet_glare": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_unet_haze": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_interp_unet_noise": {
+      "display": "not estimable",
+      "raw": "not estimable",
+      "note": "linearly interpolated crossing, severity units"
+    },
+    "perturb_thr_segformer_blood_absorption": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_segformer_defocus": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_segformer_exposure_over": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_segformer_exposure_under": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_segformer_glare": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_segformer_haze": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_segformer_noise": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_unet_blood_absorption": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_unet_defocus": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_unet_exposure_over": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_unet_exposure_under": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_unet_glare": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_unet_haze": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_thr_unet_noise": {
+      "display": "not reached",
+      "raw": "not reached",
+      "note": "median IoU never fell below the rule within the grid (string, not numeric)"
+    },
+    "perturb_threshold_iou": {
+      "display": "0.75",
+      "raw": 0.75,
+      "note": ""
+    }
+  }
+}

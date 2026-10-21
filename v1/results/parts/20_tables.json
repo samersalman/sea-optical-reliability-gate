@@ -1,0 +1,445 @@
+{
+  "script": "20_tables.R",
+  "entries": {
+    "seg_c1_d1_segformer_dice_median": {
+      "display": "0.984",
+      "raw": 0.984422770589386,
+      "note": "SegFormer, D1 (1920 × 1080): median Dice"
+    },
+    "seg_c1_d1_segformer_dice_q1": {
+      "display": "0.968",
+      "raw": 0.968303076294437,
+      "note": "SegFormer, D1 (1920 × 1080): first quartile of Dice"
+    },
+    "seg_c1_d1_segformer_dice_q3": {
+      "display": "0.991",
+      "raw": 0.991075488949276,
+      "note": "SegFormer, D1 (1920 × 1080): third quartile of Dice"
+    },
+    "seg_c1_d1_segformer_fail_n": {
+      "display": "1,059",
+      "raw": 1059,
+      "note": "SegFormer, D1 (1920 × 1080): failure events (IoU below the failure threshold)"
+    },
+    "seg_c1_d1_segformer_fail_patients": {
+      "display": "41",
+      "raw": 41,
+      "note": "SegFormer, D1 (1920 × 1080): patients with at least one failure"
+    },
+    "seg_c1_d1_segformer_fail_share": {
+      "display": "13.3%",
+      "raw": 0.132823278565157,
+      "note": "SegFormer, D1 (1920 × 1080): failure events as a share of frames"
+    },
+    "seg_c1_d1_segformer_iou_median": {
+      "display": "0.969",
+      "raw": 0.969323397651099,
+      "note": "SegFormer, D1 (1920 × 1080): median IoU"
+    },
+    "seg_c1_d1_segformer_iou_q1": {
+      "display": "0.939",
+      "raw": 0.938553807853344,
+      "note": "SegFormer, D1 (1920 × 1080): first quartile of IoU"
+    },
+    "seg_c1_d1_segformer_iou_q3": {
+      "display": "0.982",
+      "raw": 0.982308862649337,
+      "note": "SegFormer, D1 (1920 × 1080): third quartile of IoU"
+    },
+    "seg_c1_d1_segformer_n_frames": {
+      "display": "7,973",
+      "raw": 7973,
+      "note": "SegFormer, D1 (1920 × 1080): analysed frames"
+    },
+    "seg_c1_d1_segformer_n_patients": {
+      "display": "41",
+      "raw": 41,
+      "note": "SegFormer, D1 (1920 × 1080): patients"
+    },
+    "seg_c1_d1_unet_dice_median": {
+      "display": "0.986",
+      "raw": 0.986213555678361,
+      "note": "U-Net, D1 (1920 × 1080): median Dice"
+    },
+    "seg_c1_d1_unet_dice_q1": {
+      "display": "0.971",
+      "raw": 0.971266719002812,
+      "note": "U-Net, D1 (1920 × 1080): first quartile of Dice"
+    },
+    "seg_c1_d1_unet_dice_q3": {
+      "display": "0.992",
+      "raw": 0.992248394135342,
+      "note": "U-Net, D1 (1920 × 1080): third quartile of Dice"
+    },
+    "seg_c1_d1_unet_fail_n": {
+      "display": "989",
+      "raw": 989,
+      "note": "U-Net, D1 (1920 × 1080): failure events (IoU below the failure threshold)"
+    },
+    "seg_c1_d1_unet_fail_patients": {
+      "display": "41",
+      "raw": 41,
+      "note": "U-Net, D1 (1920 × 1080): patients with at least one failure"
+    },
+    "seg_c1_d1_unet_fail_share": {
+      "display": "12.4%",
+      "raw": 0.12404364730967,
+      "note": "U-Net, D1 (1920 × 1080): failure events as a share of frames"
+    },
+    "seg_c1_d1_unet_iou_median": {
+      "display": "0.973",
+      "raw": 0.972802074048516,
+      "note": "U-Net, D1 (1920 × 1080): median IoU"
+    },
+    "seg_c1_d1_unet_iou_q1": {
+      "display": "0.944",
+      "raw": 0.944138521562488,
+      "note": "U-Net, D1 (1920 × 1080): first quartile of IoU"
+    },
+    "seg_c1_d1_unet_iou_q3": {
+      "display": "0.985",
+      "raw": 0.98461603867551,
+      "note": "U-Net, D1 (1920 × 1080): third quartile of IoU"
+    },
+    "seg_c1_d1_unet_n_frames": {
+      "display": "7,973",
+      "raw": 7973,
+      "note": "U-Net, D1 (1920 × 1080): analysed frames"
+    },
+    "seg_c1_d1_unet_n_patients": {
+      "display": "41",
+      "raw": 41,
+      "note": "U-Net, D1 (1920 × 1080): patients"
+    },
+    "seg_c1_d2_segformer_dice_median": {
+      "display": "0.980",
+      "raw": 0.979534974808168,
+      "note": "SegFormer, D2 (1280 × 720): median Dice"
+    },
+    "seg_c1_d2_segformer_dice_q1": {
+      "display": "0.957",
+      "raw": 0.957449378044362,
+      "note": "SegFormer, D2 (1280 × 720): first quartile of Dice"
+    },
+    "seg_c1_d2_segformer_dice_q3": {
+      "display": "0.989",
+      "raw": 0.989111882761462,
+      "note": "SegFormer, D2 (1280 × 720): third quartile of Dice"
+    },
+    "seg_c1_d2_segformer_fail_n": {
+      "display": "307",
+      "raw": 307,
+      "note": "SegFormer, D2 (1280 × 720): failure events (IoU below the failure threshold)"
+    },
+    "seg_c1_d2_segformer_fail_patients": {
+      "display": "19",
+      "raw": 19,
+      "note": "SegFormer, D2 (1280 × 720): patients with at least one failure"
+    },
+    "seg_c1_d2_segformer_fail_share": {
+      "display": "19.0%",
+      "raw": 0.189857761286333,
+      "note": "SegFormer, D2 (1280 × 720): failure events as a share of frames"
+    },
+    "seg_c1_d2_segformer_iou_median": {
+      "display": "0.960",
+      "raw": 0.959890785697462,
+      "note": "SegFormer, D2 (1280 × 720): median IoU"
+    },
+    "seg_c1_d2_segformer_iou_q1": {
+      "display": "0.918",
+      "raw": 0.918372075063711,
+      "note": "SegFormer, D2 (1280 × 720): first quartile of IoU"
+    },
+    "seg_c1_d2_segformer_iou_q3": {
+      "display": "0.978",
+      "raw": 0.978458313926409,
+      "note": "SegFormer, D2 (1280 × 720): third quartile of IoU"
+    },
+    "seg_c1_d2_segformer_n_frames": {
+      "display": "1,617",
+      "raw": 1617,
+      "note": "SegFormer, D2 (1280 × 720): analysed frames"
+    },
+    "seg_c1_d2_segformer_n_patients": {
+      "display": "20",
+      "raw": 20,
+      "note": "SegFormer, D2 (1280 × 720): patients"
+    },
+    "seg_c1_d2_unet_dice_median": {
+      "display": "0.982",
+      "raw": 0.981743327488227,
+      "note": "U-Net, D2 (1280 × 720): median Dice"
+    },
+    "seg_c1_d2_unet_dice_q1": {
+      "display": "0.959",
+      "raw": 0.958794228917581,
+      "note": "U-Net, D2 (1280 × 720): first quartile of Dice"
+    },
+    "seg_c1_d2_unet_dice_q3": {
+      "display": "0.991",
+      "raw": 0.990752098422049,
+      "note": "U-Net, D2 (1280 × 720): third quartile of Dice"
+    },
+    "seg_c1_d2_unet_fail_n": {
+      "display": "304",
+      "raw": 304,
+      "note": "U-Net, D2 (1280 × 720): failure events (IoU below the failure threshold)"
+    },
+    "seg_c1_d2_unet_fail_patients": {
+      "display": "20",
+      "raw": 20,
+      "note": "U-Net, D2 (1280 × 720): patients with at least one failure"
+    },
+    "seg_c1_d2_unet_fail_share": {
+      "display": "18.8%",
+      "raw": 0.188002473716759,
+      "note": "U-Net, D2 (1280 × 720): failure events as a share of frames"
+    },
+    "seg_c1_d2_unet_iou_median": {
+      "display": "0.964",
+      "raw": 0.964141315240805,
+      "note": "U-Net, D2 (1280 × 720): median IoU"
+    },
+    "seg_c1_d2_unet_iou_q1": {
+      "display": "0.921",
+      "raw": 0.920849898786899,
+      "note": "U-Net, D2 (1280 × 720): first quartile of IoU"
+    },
+    "seg_c1_d2_unet_iou_q3": {
+      "display": "0.982",
+      "raw": 0.981673676876629,
+      "note": "U-Net, D2 (1280 × 720): third quartile of IoU"
+    },
+    "seg_c1_d2_unet_n_frames": {
+      "display": "1,617",
+      "raw": 1617,
+      "note": "U-Net, D2 (1280 × 720): analysed frames"
+    },
+    "seg_c1_d2_unet_n_patients": {
+      "display": "20",
+      "raw": 20,
+      "note": "U-Net, D2 (1280 × 720): patients"
+    },
+    "seg_c1_segformer_dice_median": {
+      "display": "0.984",
+      "raw": 0.983732279239725,
+      "note": "SegFormer, All Center 1 (D1 and D2): median Dice"
+    },
+    "seg_c1_segformer_dice_q1": {
+      "display": "0.966",
+      "raw": 0.966251243259342,
+      "note": "SegFormer, All Center 1 (D1 and D2): first quartile of Dice"
+    },
+    "seg_c1_segformer_dice_q3": {
+      "display": "0.991",
+      "raw": 0.990808140608975,
+      "note": "SegFormer, All Center 1 (D1 and D2): third quartile of Dice"
+    },
+    "seg_c1_segformer_fail_n": {
+      "display": "1,366",
+      "raw": 1366,
+      "note": "SegFormer, All Center 1 (D1 and D2): failure events (IoU below the failure threshold)"
+    },
+    "seg_c1_segformer_fail_patients": {
+      "display": "60",
+      "raw": 60,
+      "note": "SegFormer, All Center 1 (D1 and D2): patients with at least one failure"
+    },
+    "seg_c1_segformer_fail_share": {
+      "display": "14.2%",
+      "raw": 0.142440041710115,
+      "note": "SegFormer, All Center 1 (D1 and D2): failure events as a share of frames"
+    },
+    "seg_c1_segformer_iou_median": {
+      "display": "0.968",
+      "raw": 0.967985363645588,
+      "note": "SegFormer, All Center 1 (D1 and D2): median IoU"
+    },
+    "seg_c1_segformer_iou_q1": {
+      "display": "0.935",
+      "raw": 0.93470607595802,
+      "note": "SegFormer, All Center 1 (D1 and D2): first quartile of IoU"
+    },
+    "seg_c1_segformer_iou_q3": {
+      "display": "0.982",
+      "raw": 0.981783722678594,
+      "note": "SegFormer, All Center 1 (D1 and D2): third quartile of IoU"
+    },
+    "seg_c1_segformer_n_frames": {
+      "display": "9,590",
+      "raw": 9590,
+      "note": "SegFormer, All Center 1 (D1 and D2): analysed frames"
+    },
+    "seg_c1_segformer_n_patients": {
+      "display": "61",
+      "raw": 61,
+      "note": "SegFormer, All Center 1 (D1 and D2): patients"
+    },
+    "seg_c1_unet_dice_median": {
+      "display": "0.986",
+      "raw": 0.985583207947902,
+      "note": "U-Net, All Center 1 (D1 and D2): median Dice"
+    },
+    "seg_c1_unet_dice_q1": {
+      "display": "0.969",
+      "raw": 0.969041790867202,
+      "note": "U-Net, All Center 1 (D1 and D2): first quartile of Dice"
+    },
+    "seg_c1_unet_dice_q3": {
+      "display": "0.992",
+      "raw": 0.992037688951525,
+      "note": "U-Net, All Center 1 (D1 and D2): third quartile of Dice"
+    },
+    "seg_c1_unet_fail_n": {
+      "display": "1,293",
+      "raw": 1293,
+      "note": "U-Net, All Center 1 (D1 and D2): failure events (IoU below the failure threshold)"
+    },
+    "seg_c1_unet_fail_patients": {
+      "display": "61",
+      "raw": 61,
+      "note": "U-Net, All Center 1 (D1 and D2): patients with at least one failure"
+    },
+    "seg_c1_unet_fail_share": {
+      "display": "13.5%",
+      "raw": 0.134827945776851,
+      "note": "U-Net, All Center 1 (D1 and D2): failure events as a share of frames"
+    },
+    "seg_c1_unet_iou_median": {
+      "display": "0.972",
+      "raw": 0.971576195971785,
+      "note": "U-Net, All Center 1 (D1 and D2): median IoU"
+    },
+    "seg_c1_unet_iou_q1": {
+      "display": "0.940",
+      "raw": 0.939942843742454,
+      "note": "U-Net, All Center 1 (D1 and D2): first quartile of IoU"
+    },
+    "seg_c1_unet_iou_q3": {
+      "display": "0.984",
+      "raw": 0.984201173080024,
+      "note": "U-Net, All Center 1 (D1 and D2): third quartile of IoU"
+    },
+    "seg_c1_unet_n_frames": {
+      "display": "9,590",
+      "raw": 9590,
+      "note": "U-Net, All Center 1 (D1 and D2): analysed frames"
+    },
+    "seg_c1_unet_n_patients": {
+      "display": "61",
+      "raw": 61,
+      "note": "U-Net, All Center 1 (D1 and D2): patients"
+    },
+    "seg_c2_segformer_dice_median": {
+      "display": "0.987",
+      "raw": 0.986719155563246,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): median Dice"
+    },
+    "seg_c2_segformer_dice_q1": {
+      "display": "0.973",
+      "raw": 0.973442364424868,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): first quartile of Dice"
+    },
+    "seg_c2_segformer_dice_q3": {
+      "display": "0.992",
+      "raw": 0.991716610904135,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): third quartile of Dice"
+    },
+    "seg_c2_segformer_fail_n": {
+      "display": "139",
+      "raw": 139,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): failure events (IoU below the failure threshold)"
+    },
+    "seg_c2_segformer_fail_patients": {
+      "display": "34",
+      "raw": 34,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): patients with at least one failure"
+    },
+    "seg_c2_segformer_fail_share": {
+      "display": "13.0%",
+      "raw": 0.130028063610851,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): failure events as a share of frames"
+    },
+    "seg_c2_segformer_iou_median": {
+      "display": "0.974",
+      "raw": 0.973786449216582,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): median IoU"
+    },
+    "seg_c2_segformer_iou_q1": {
+      "display": "0.948",
+      "raw": 0.948258851418015,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): first quartile of IoU"
+    },
+    "seg_c2_segformer_iou_q3": {
+      "display": "0.984",
+      "raw": 0.98356932349487,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): third quartile of IoU"
+    },
+    "seg_c2_segformer_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): analysed frames"
+    },
+    "seg_c2_segformer_n_patients": {
+      "display": "38",
+      "raw": 38,
+      "note": "SegFormer, Center 2 (D3, 720 × 576): patients"
+    },
+    "seg_c2_unet_dice_median": {
+      "display": "0.989",
+      "raw": 0.98882179450477,
+      "note": "U-Net, Center 2 (D3, 720 × 576): median Dice"
+    },
+    "seg_c2_unet_dice_q1": {
+      "display": "0.977",
+      "raw": 0.977174563631364,
+      "note": "U-Net, Center 2 (D3, 720 × 576): first quartile of Dice"
+    },
+    "seg_c2_unet_dice_q3": {
+      "display": "0.993",
+      "raw": 0.99291385215587,
+      "note": "U-Net, Center 2 (D3, 720 × 576): third quartile of Dice"
+    },
+    "seg_c2_unet_fail_n": {
+      "display": "109",
+      "raw": 109,
+      "note": "U-Net, Center 2 (D3, 720 × 576): failure events (IoU below the failure threshold)"
+    },
+    "seg_c2_unet_fail_patients": {
+      "display": "31",
+      "raw": 31,
+      "note": "U-Net, Center 2 (D3, 720 × 576): patients with at least one failure"
+    },
+    "seg_c2_unet_fail_share": {
+      "display": "10.2%",
+      "raw": 0.101964452759588,
+      "note": "U-Net, Center 2 (D3, 720 × 576): failure events as a share of frames"
+    },
+    "seg_c2_unet_iou_median": {
+      "display": "0.978",
+      "raw": 0.977890730962194,
+      "note": "U-Net, Center 2 (D3, 720 × 576): median IoU"
+    },
+    "seg_c2_unet_iou_q1": {
+      "display": "0.955",
+      "raw": 0.955367874992092,
+      "note": "U-Net, Center 2 (D3, 720 × 576): first quartile of IoU"
+    },
+    "seg_c2_unet_iou_q3": {
+      "display": "0.986",
+      "raw": 0.98592742466114,
+      "note": "U-Net, Center 2 (D3, 720 × 576): third quartile of IoU"
+    },
+    "seg_c2_unet_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": "U-Net, Center 2 (D3, 720 × 576): analysed frames"
+    },
+    "seg_c2_unet_n_patients": {
+      "display": "38",
+      "raw": 38,
+      "note": "U-Net, Center 2 (D3, 720 × 576): patients"
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "script": "32_text_keys.R",
+  "entries": {
+    "txt_auroc_contrast_local": {
+      "display": "0.32",
+      "raw": 0.322276906427737,
+      "note": "assoc_table2.csv: AUROC for Difficult, contrast_local"
+    },
+    "txt_auroc_haze_dcp": {
+      "display": "0.60",
+      "raw": 0.601534452712068,
+      "note": "assoc_table2.csv: AUROC for Difficult, haze_dcp"
+    },
+    "txt_ci_assoc_auroc_sharp_tenengrad": {
+      "display": "0.28 (0.23 to 0.33)",
+      "raw": "0.28 (0.23 to 0.33)",
+      "note": "display of assoc_auroc_sharp_tenengrad without the 95% CI label"
+    },
+    "txt_ci_assoc_ext_or_contrast_local": {
+      "display": "2.10 (1.45 to 3.05)",
+      "raw": "2.10 (1.45 to 3.05)",
+      "note": "display of assoc_ext_or_contrast_local without the 95% CI label"
+    },
+    "txt_ci_assoc_ext_or_haze_dcp": {
+      "display": "0.78 (0.62 to 0.98)",
+      "raw": "0.78 (0.62 to 0.98)",
+      "note": "display of assoc_ext_or_haze_dcp without the 95% CI label"
+    },
+    "txt_ci_assoc_ext_or_sharp_tenengrad": {
+      "display": "2.00 (1.35 to 2.97)",
+      "raw": "2.00 (1.35 to 2.97)",
+      "note": "display of assoc_ext_or_sharp_tenengrad without the 95% CI label"
+    },
+    "txt_ci_assoc_or_contrast_local": {
+      "display": "0.61 (0.47 to 0.79)",
+      "raw": "0.61 (0.47 to 0.79)",
+      "note": "display of assoc_or_contrast_local without the 95% CI label"
+    },
+    "txt_ci_assoc_or_red_dom": {
+      "display": "1.35 (1.15 to 1.58)",
+      "raw": "1.35 (1.15 to 1.58)",
+      "note": "display of assoc_or_red_dom without the 95% CI label"
+    },
+    "txt_ci_assoc_or_sharp_tenengrad": {
+      "display": "0.56 (0.43 to 0.74)",
+      "raw": "0.56 (0.43 to 0.74)",
+      "note": "display of assoc_or_sharp_tenengrad without the 95% CI label"
+    },
+    "txt_ci_diag_dom_d1_diff_aurc_gate_random_ci": {
+      "display": "-0.012 (-0.015 to -0.007)",
+      "raw": "-0.012 (-0.015 to -0.007)",
+      "note": "display of diag_dom_d1_diff_aurc_gate_random_ci without the 95% CI label"
+    },
+    "txt_ci_diag_dom_d2_diff_aurc_gate_random_ci": {
+      "display": "-0.009 (-0.015 to -0.003)",
+      "raw": "-0.009 (-0.015 to -0.003)",
+      "note": "display of diag_dom_d2_diff_aurc_gate_random_ci without the 95% CI label"
+    },
+    "txt_ci_diag_shift_domain_auroc_ci": {
+      "display": "0.991 (0.984 to 0.996)",
+      "raw": "0.991 (0.984 to 0.996)",
+      "note": "display of diag_shift_domain_auroc_ci without the 95% CI label"
+    },
+    "txt_ci_gate_ext_aurc_random_ci": {
+      "display": "0.046 (0.040 to 0.053)",
+      "raw": "0.046 (0.040 to 0.053)",
+      "note": "display of gate_ext_aurc_random_ci without the 95% CI label"
+    },
+    "txt_ci_gate_ext_auroc_optical_gate_ci": {
+      "display": "0.42 (0.37 to 0.48)",
+      "raw": "0.42 (0.37 to 0.48)",
+      "note": "display of gate_ext_auroc_optical_gate_ci without the 95% CI label"
+    },
+    "txt_ci_gate_ext_calslope_optical_gate_ci": {
+      "display": "-2.04 (-3.37 to -0.67)",
+      "raw": "-2.04 (-3.37 to -0.67)",
+      "note": "display of gate_ext_calslope_optical_gate_ci without the 95% CI label"
+    },
+    "txt_ci_gate_ext_diff_aurc_gate_vs_area_ci": {
+      "display": "0.012 (0.006 to 0.018)",
+      "raw": "0.012 (0.006 to 0.018)",
+      "note": "display of gate_ext_diff_aurc_gate_vs_area_ci without the 95% CI label"
+    },
+    "txt_ci_gate_ext_diff_aurc_gate_vs_ens_ci": {
+      "display": "0.026 (0.019 to 0.034)",
+      "raw": "0.026 (0.019 to 0.034)",
+      "note": "display of gate_ext_diff_aurc_gate_vs_ens_ci without the 95% CI label"
+    },
+    "txt_ci_gate_ext_diff_aurc_gate_vs_entropy_ci": {
+      "display": "0.026 (0.020 to 0.033)",
+      "raw": "0.026 (0.020 to 0.033)",
+      "note": "display of gate_ext_diff_aurc_gate_vs_entropy_ci without the 95% CI label"
+    },
+    "txt_ci_gate_ext_diff_aurc_gate_vs_random_ci": {
+      "display": "0.002 (-0.002 to 0.006)",
+      "raw": "0.002 (-0.002 to 0.006)",
+      "note": "display of gate_ext_diff_aurc_gate_vs_random_ci without the 95% CI label"
+    },
+    "txt_ci_gate_int_auroc_optical_gate_ci": {
+      "display": "0.63 (0.58 to 0.69)",
+      "raw": "0.63 (0.58 to 0.69)",
+      "note": "display of gate_int_auroc_optical_gate_ci without the 95% CI label"
+    },
+    "txt_ci_gate_int_diff_aurc_gate_vs_area_ci": {
+      "display": "0.003 (-0.001 to 0.010)",
+      "raw": "0.003 (-0.001 to 0.010)",
+      "note": "display of gate_int_diff_aurc_gate_vs_area_ci without the 95% CI label"
+    },
+    "txt_ci_gate_int_diff_aurc_gate_vs_ens_ci": {
+      "display": "0.018 (0.013 to 0.024)",
+      "raw": "0.018 (0.013 to 0.024)",
+      "note": "display of gate_int_diff_aurc_gate_vs_ens_ci without the 95% CI label"
+    },
+    "txt_ci_gate_int_diff_aurc_gate_vs_entropy_ci": {
+      "display": "0.018 (0.013 to 0.025)",
+      "raw": "0.018 (0.013 to 0.025)",
+      "note": "display of gate_int_diff_aurc_gate_vs_entropy_ci without the 95% CI label"
+    },
+    "txt_ci_gate_int_diff_aurc_gate_vs_random_ci": {
+      "display": "-0.012 (-0.015 to -0.007)",
+      "raw": "-0.012 (-0.015 to -0.007)",
+      "note": "display of gate_int_diff_aurc_gate_vs_random_ci without the 95% CI label"
+    },
+    "txt_ci_sens_domain_cov_diff_random_ci": {
+      "display": "0.002 (-0.002 to 0.005)",
+      "raw": "0.002 (-0.002 to 0.005)",
+      "note": "display of sens_domain_cov_diff_random_ci without the 95% CI label"
+    },
+    "txt_ci_sens_gam_diff_random_ci": {
+      "display": "-0.008 (-0.012 to -0.005)",
+      "raw": "-0.008 (-0.012 to -0.005)",
+      "note": "display of sens_gam_diff_random_ci without the 95% CI label"
+    },
+    "txt_ci_sens_lodo_d1_to_d3_diff_random_ci": {
+      "display": "0.002 (-0.002 to 0.006)",
+      "raw": "0.002 (-0.002 to 0.006)",
+      "note": "display of sens_lodo_d1_to_d3_diff_random_ci without the 95% CI label"
+    },
+    "txt_ci_sens_xgboost_diff_random_ci": {
+      "display": "-0.005 (-0.012 to 0.005)",
+      "raw": "-0.005 (-0.012 to 0.005)",
+      "note": "display of sens_xgboost_diff_random_ci without the 95% CI label"
+    },
+    "txt_ci_transfer_ext_auroc_optical_gate_ci": {
+      "display": "0.47 (0.42 to 0.53)",
+      "raw": "0.47 (0.42 to 0.53)",
+      "note": "display of transfer_ext_auroc_optical_gate_ci without the 95% CI label"
+    },
+    "txt_ci_transfer_ext_diff_aurc_gate_vs_random_ci": {
+      "display": "-0.001 (-0.005 to 0.003)",
+      "raw": "-0.001 (-0.005 to 0.003)",
+      "note": "display of transfer_ext_diff_aurc_gate_vs_random_ci without the 95% CI label"
+    },
+    "txt_ci_transfer_int_diff_aurc_gate_vs_random_ci": {
+      "display": "-0.012 (-0.015 to -0.007)",
+      "raw": "-0.012 (-0.015 to -0.007)",
+      "note": "display of transfer_int_diff_aurc_gate_vs_random_ci without the 95% CI label"
+    },
+    "txt_ext_below_under_frac": {
+      "display": "90.4%",
+      "raw": 0.903648269410664,
+      "note": "gate_range_check.csv: external frames below the training minimum of the under-exposed fraction"
+    },
+    "txt_ext_diff_entropy_vs_ens_ci4": {
+      "display": "0.0000 (-0.0006 to 0.0008)",
+      "raw": [2.58745675674604e-05, -0.000626308388294815, 0.000763617261935539],
+      "note": "sensitivity.csv (locked reference rows, same paired bootstrap as Table 3): external AURC of pixel entropy minus ensemble disagreement"
+    },
+    "txt_ext_diff_gateens_vs_ens_ci4": {
+      "display": "0.0011 (0.0004 to 0.0019)",
+      "raw": [0.00107699262670495, 0.000353645596316847, 0.00192524180996676],
+      "note": "gate_paired_diffs.csv: external AURC of gate + ensemble minus ensemble disagreement (positive = ensemble alone lower)"
+    },
+    "txt_headroom_ext": {
+      "display": "0.030",
+      "raw": 0.0299102088032289,
+      "note": "gate_external.csv: AURC of random order minus AURC of the oracle ranking (U-Net)"
+    },
+    "txt_headroom_int": {
+      "display": "0.035",
+      "raw": 0.0348491584448889,
+      "note": "gate_internal.csv: AURC of random order minus AURC of the oracle ranking (U-Net)"
+    },
+    "txt_normal_under_d1": {
+      "display": "3.9%",
+      "raw": 0.0391201877364407,
+      "note": "assoc_by_domain.csv: median under-exposed fraction of Normal frames, D1"
+    },
+    "txt_normal_under_d3": {
+      "display": "0.015%",
+      "raw": 0.000151726649268678,
+      "note": "assoc_by_domain.csv: median under-exposed fraction of Normal frames, D3"
+    },
+    "txt_pgrid_blood_absorption": {
+      "display": "0.1, 0.25, 0.5, 0.8, 1.2",
+      "raw": "0.1, 0.25, 0.5, 0.8, 1.2",
+      "note": "perturb_doseresponse.csv: physical parameter of blood_absorption at the severity steps above baseline"
+    },
+    "txt_pgrid_blood_absorption_base": {
+      "display": "0",
+      "raw": "0",
+      "note": "perturb_doseresponse.csv: physical parameter of blood_absorption at baseline (severity zero, the unperturbed image)"
+    },
+    "txt_pgrid_defocus": {
+      "display": "1, 2, 3.5, 5, 7",
+      "raw": "1, 2, 3.5, 5, 7",
+      "note": "perturb_doseresponse.csv: physical parameter of defocus at the severity steps above baseline"
+    },
+    "txt_pgrid_defocus_base": {
+      "display": "0",
+      "raw": "0",
+      "note": "perturb_doseresponse.csv: physical parameter of defocus at baseline (severity zero, the unperturbed image)"
+    },
+    "txt_pgrid_exposure_over": {
+      "display": "1.3, 1.7, 2.3, 3.2, 4.5",
+      "raw": "1.3, 1.7, 2.3, 3.2, 4.5",
+      "note": "perturb_doseresponse.csv: physical parameter of exposure_over at the severity steps above baseline"
+    },
+    "txt_pgrid_exposure_over_base": {
+      "display": "1",
+      "raw": "1",
+      "note": "perturb_doseresponse.csv: physical parameter of exposure_over at baseline (severity zero, the unperturbed image)"
+    },
+    "txt_pgrid_exposure_under": {
+      "display": "0.75, 0.55, 0.4, 0.28, 0.18",
+      "raw": "0.75, 0.55, 0.4, 0.28, 0.18",
+      "note": "perturb_doseresponse.csv: physical parameter of exposure_under at the severity steps above baseline"
+    },
+    "txt_pgrid_exposure_under_base": {
+      "display": "1",
+      "raw": "1",
+      "note": "perturb_doseresponse.csv: physical parameter of exposure_under at baseline (severity zero, the unperturbed image)"
+    },
+    "txt_pgrid_glare": {
+      "display": "0.005, 0.015, 0.03, 0.06, 0.1",
+      "raw": "0.005, 0.015, 0.03, 0.06, 0.1",
+      "note": "perturb_doseresponse.csv: physical parameter of glare at the severity steps above baseline"
+    },
+    "txt_pgrid_glare_base": {
+      "display": "0",
+      "raw": "0",
+      "note": "perturb_doseresponse.csv: physical parameter of glare at baseline (severity zero, the unperturbed image)"
+    },
+    "txt_pgrid_haze": {
+      "display": "0.04, 0.1, 0.2, 0.36, 0.55",
+      "raw": "0.04, 0.1, 0.2, 0.36, 0.55",
+      "note": "perturb_doseresponse.csv: physical parameter of haze at the severity steps above baseline"
+    },
+    "txt_pgrid_haze_base": {
+      "display": "0",
+      "raw": "0",
+      "note": "perturb_doseresponse.csv: physical parameter of haze at baseline (severity zero, the unperturbed image)"
+    },
+    "txt_pgrid_noise": {
+      "display": "0.01, 0.02, 0.035, 0.055, 0.08",
+      "raw": "0.01, 0.02, 0.035, 0.055, 0.08",
+      "note": "perturb_doseresponse.csv: physical parameter of noise at the severity steps above baseline"
+    },
+    "txt_pgrid_noise_base": {
+      "display": "0",
+      "raw": "0",
+      "note": "perturb_doseresponse.csv: physical parameter of noise at baseline (severity zero, the unperturbed image)"
+    },
+    "txt_rho_defocus_sharp": {
+      "display": "-0.76",
+      "raw": -0.759430676741814,
+      "note": "perturb_rho.csv: Spearman rho with severity, defocus x sharp_tenengrad"
+    },
+    "txt_rho_haze_haze": {
+      "display": "0.97",
+      "raw": 0.971049925395833,
+      "note": "perturb_rho.csv: Spearman rho with severity, haze x haze_dcp"
+    },
+    "txt_rho_noise_sharp": {
+      "display": "0.90",
+      "raw": 0.899081865030017,
+      "note": "perturb_rho.csv: Spearman rho with severity, noise x sharp_tenengrad"
+    },
+    "txt_rho_under_lum": {
+      "display": "-0.90",
+      "raw": -0.896230173467978,
+      "note": "perturb_rho.csv: Spearman rho with severity, exposure_under x lum_mean"
+    },
+    "txt_table_s1": {
+      "display": "Table S1",
+      "raw": "Table S1",
+      "note": "label of the supplementary table, as the file name TableS<n> spells it"
+    },
+    "txt_table_s2": {
+      "display": "Table S2",
+      "raw": "Table S2",
+      "note": "label of the supplementary table, as the file name TableS<n> spells it"
+    },
+    "txt_table_s3": {
+      "display": "Table S3",
+      "raw": "Table S3",
+      "note": "label of the supplementary table, as the file name TableS<n> spells it"
+    }
+  }
+}

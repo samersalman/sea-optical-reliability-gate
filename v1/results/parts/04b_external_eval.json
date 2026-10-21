@@ -1,0 +1,830 @@
+{
+  "script": "04b_external_eval.R",
+  "entries": {
+    "gate_boot_resamples": {
+      "display": "2,000",
+      "raw": 2000,
+      "note": ""
+    },
+    "gate_ext_aurc_ens_disagreement": {
+      "display": "0.022",
+      "raw": 0.0215045999293184,
+      "note": ""
+    },
+    "gate_ext_aurc_ens_disagreement_ci": {
+      "display": "0.022 (95% CI 0.020 to 0.024)",
+      "raw": [0.0215045999293184, 0.0196440446769695, 0.0241242899076599],
+      "note": ""
+    },
+    "gate_ext_aurc_entropy": {
+      "display": "0.022",
+      "raw": 0.0215304744968859,
+      "note": ""
+    },
+    "gate_ext_aurc_entropy_ci": {
+      "display": "0.022 (95% CI 0.020 to 0.024)",
+      "raw": [0.0215304744968859, 0.0195288290667053, 0.0242222980439846],
+      "note": ""
+    },
+    "gate_ext_aurc_gate_plus_ensemble": {
+      "display": "0.023",
+      "raw": 0.0225815925560234,
+      "note": ""
+    },
+    "gate_ext_aurc_gate_plus_ensemble_ci": {
+      "display": "0.023 (95% CI 0.020 to 0.025)",
+      "raw": [0.0225815925560234, 0.0204848262544326, 0.0252653626394446],
+      "note": ""
+    },
+    "gate_ext_aurc_optical_gate": {
+      "display": "0.048",
+      "raw": 0.0478704570778232,
+      "note": ""
+    },
+    "gate_ext_aurc_optical_gate_ci": {
+      "display": "0.048 (95% CI 0.040 to 0.057)",
+      "raw": [0.0478704570778232, 0.0397883109317383, 0.0565648502272512],
+      "note": ""
+    },
+    "gate_ext_aurc_oracle": {
+      "display": "0.016",
+      "raw": 0.0161150080314954,
+      "note": ""
+    },
+    "gate_ext_aurc_oracle_ci": {
+      "display": "0.016 (95% CI 0.015 to 0.018)",
+      "raw": [0.0161150080314954, 0.0148504743912132, 0.0176901665611423],
+      "note": ""
+    },
+    "gate_ext_aurc_predicted_area": {
+      "display": "0.036",
+      "raw": 0.0357685628535899,
+      "note": ""
+    },
+    "gate_ext_aurc_predicted_area_ci": {
+      "display": "0.036 (95% CI 0.031 to 0.041)",
+      "raw": [0.0357685628535899, 0.0309103322534628, 0.0411565099605495],
+      "note": ""
+    },
+    "gate_ext_aurc_random": {
+      "display": "0.046",
+      "raw": 0.0460252168347243,
+      "note": ""
+    },
+    "gate_ext_aurc_random_ci": {
+      "display": "0.046 (95% CI 0.040 to 0.053)",
+      "raw": [0.0460252168347243, 0.0399146307981141, 0.0533108991376554],
+      "note": ""
+    },
+    "gate_ext_auroc_ens_disagreement": {
+      "display": "0.88",
+      "raw": 0.884518348623853,
+      "note": ""
+    },
+    "gate_ext_auroc_ens_disagreement_ci": {
+      "display": "0.88 (95% CI 0.83 to 0.92)",
+      "raw": [0.884518348623853, 0.834126838949311, 0.922435485583697],
+      "note": ""
+    },
+    "gate_ext_auroc_entropy": {
+      "display": "0.88",
+      "raw": 0.880839067278287,
+      "note": ""
+    },
+    "gate_ext_auroc_entropy_ci": {
+      "display": "0.88 (95% CI 0.84 to 0.91)",
+      "raw": [0.880839067278287, 0.840951343393366, 0.912606755332673],
+      "note": ""
+    },
+    "gate_ext_auroc_gate_plus_ensemble": {
+      "display": "0.87",
+      "raw": 0.865290519877676,
+      "note": ""
+    },
+    "gate_ext_auroc_gate_plus_ensemble_ci": {
+      "display": "0.87 (95% CI 0.80 to 0.91)",
+      "raw": [0.865290519877676, 0.800097556840129, 0.914128263397468],
+      "note": ""
+    },
+    "gate_ext_auroc_optical_gate": {
+      "display": "0.42",
+      "raw": 0.420451070336391,
+      "note": ""
+    },
+    "gate_ext_auroc_optical_gate_ci": {
+      "display": "0.42 (95% CI 0.37 to 0.48)",
+      "raw": [0.420451070336391, 0.372308682645564, 0.475969716667603],
+      "note": ""
+    },
+    "gate_ext_auroc_predicted_area": {
+      "display": "0.65",
+      "raw": 0.648862767584098,
+      "note": ""
+    },
+    "gate_ext_auroc_predicted_area_ci": {
+      "display": "0.65 (95% CI 0.59 to 0.71)",
+      "raw": [0.648862767584098, 0.591664204923073, 0.707309266494008],
+      "note": ""
+    },
+    "gate_ext_binary_descriptive": {
+      "display": "0",
+      "raw": 0,
+      "note": "1 = too few failures or patients with failures: binary metrics are descriptive only"
+    },
+    "gate_ext_calint_gate_plus_ensemble": {
+      "display": "-0.55",
+      "raw": -0.545091298484331,
+      "note": ""
+    },
+    "gate_ext_calint_gate_plus_ensemble_ci": {
+      "display": "-0.55 (95% CI -1.07 to -0.14)",
+      "raw": [-0.545091298484331, -1.07137985422593, -0.13747544566731],
+      "note": ""
+    },
+    "gate_ext_calint_optical_gate": {
+      "display": "-0.39",
+      "raw": -0.394328815483098,
+      "note": ""
+    },
+    "gate_ext_calint_optical_gate_ci": {
+      "display": "-0.39 (95% CI -0.74 to -0.12)",
+      "raw": [-0.394328815483098, -0.736168357137738, -0.115839723863202],
+      "note": ""
+    },
+    "gate_ext_calint_predicted_area": {
+      "display": "0.25",
+      "raw": 0.249693912476389,
+      "note": ""
+    },
+    "gate_ext_calint_predicted_area_ci": {
+      "display": "0.25 (95% CI -0.10 to 0.54)",
+      "raw": [0.249693912476389, -0.100922053656264, 0.536020543950689],
+      "note": ""
+    },
+    "gate_ext_calslope_gate_plus_ensemble": {
+      "display": "0.54",
+      "raw": 0.539512241755978,
+      "note": ""
+    },
+    "gate_ext_calslope_gate_plus_ensemble_ci": {
+      "display": "0.54 (95% CI 0.36 to 0.81)",
+      "raw": [0.539512241755978, 0.356044612818268, 0.809405739072014],
+      "note": ""
+    },
+    "gate_ext_calslope_optical_gate": {
+      "display": "-2.04",
+      "raw": -2.04468361630989,
+      "note": ""
+    },
+    "gate_ext_calslope_optical_gate_ci": {
+      "display": "-2.04 (95% CI -3.37 to -0.67)",
+      "raw": [-2.04468361630989, -3.36664488046295, -0.667636937938797],
+      "note": ""
+    },
+    "gate_ext_calslope_predicted_area": {
+      "display": "0.92",
+      "raw": 0.922449210120409,
+      "note": ""
+    },
+    "gate_ext_calslope_predicted_area_ci": {
+      "display": "0.92 (95% CI 0.59 to 1.29)",
+      "raw": [0.922449210120409, 0.588401471181972, 1.28921255951697],
+      "note": ""
+    },
+    "gate_ext_diff_aurc_gate_vs_area": {
+      "display": "0.012",
+      "raw": 0.0121018942242333,
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gate_vs_area_ci": {
+      "display": "0.012 (95% CI 0.006 to 0.018)",
+      "raw": [0.0121018942242333, 0.00586217782244621, 0.0184241072886189],
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gate_vs_ens": {
+      "display": "0.026",
+      "raw": 0.0263658571485048,
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gate_vs_ens_ci": {
+      "display": "0.026 (95% CI 0.019 to 0.034)",
+      "raw": [0.0263658571485048, 0.0194152151865553, 0.0336448095847925],
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gate_vs_entropy": {
+      "display": "0.026",
+      "raw": 0.0263399825809373,
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gate_vs_entropy_ci": {
+      "display": "0.026 (95% CI 0.020 to 0.033)",
+      "raw": [0.0263399825809373, 0.0195384947886991, 0.0334256973480393],
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gate_vs_random": {
+      "display": "0.002",
+      "raw": 0.00184524024309887,
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gate_vs_random_ci": {
+      "display": "0.002 (95% CI -0.002 to 0.006)",
+      "raw": [0.00184524024309887, -0.00209589625513213, 0.00585133966817696],
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gateens_vs_ens": {
+      "display": "0.001",
+      "raw": 0.00107699262670495,
+      "note": "negative favours the first method"
+    },
+    "gate_ext_diff_aurc_gateens_vs_ens_ci": {
+      "display": "0.001 (95% CI 0.000 to 0.002)",
+      "raw": [0.00107699262670495, 0.000353645596316847, 0.00192524180996676],
+      "note": "negative favours the first method"
+    },
+    "gate_ext_failure_events": {
+      "display": "109",
+      "raw": 109,
+      "note": ""
+    },
+    "gate_ext_failure_patients": {
+      "display": "31",
+      "raw": 31,
+      "note": ""
+    },
+    "gate_ext_failure_rate": {
+      "display": "10.2%",
+      "raw": 0.101964452759588,
+      "note": ""
+    },
+    "gate_ext_fov_excluded": {
+      "display": "0",
+      "raw": 0,
+      "note": "Center 2 frames with fov_found == FALSE dropped by 04b (0 when predictions.parquet already excludes them)"
+    },
+    "gate_ext_n_frames": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": ""
+    },
+    "gate_ext_n_patients": {
+      "display": "38",
+      "raw": 38,
+      "note": ""
+    },
+    "gate_ext_outside_range": {
+      "display": "90.6%",
+      "raw": 0.905519176800748,
+      "note": "share of Center 2 frames with at least one optical metric outside the Center 1 training range"
+    },
+    "gate_ext_sel80_ens_disagreement": {
+      "display": "0.029",
+      "raw": 0.029251274808378,
+      "note": ""
+    },
+    "gate_ext_sel80_ens_disagreement_ci": {
+      "display": "0.029 (95% CI 0.026 to 0.033)",
+      "raw": [0.029251274808378, 0.026321288003989, 0.0329826908191222],
+      "note": ""
+    },
+    "gate_ext_sel80_entropy": {
+      "display": "0.029",
+      "raw": 0.0293246511220659,
+      "note": ""
+    },
+    "gate_ext_sel80_entropy_ci": {
+      "display": "0.029 (95% CI 0.026 to 0.033)",
+      "raw": [0.0293246511220659, 0.0263516553849592, 0.0327814502440675],
+      "note": ""
+    },
+    "gate_ext_sel80_gate_plus_ensemble": {
+      "display": "0.030",
+      "raw": 0.0295418803128126,
+      "note": ""
+    },
+    "gate_ext_sel80_gate_plus_ensemble_ci": {
+      "display": "0.030 (95% CI 0.026 to 0.033)",
+      "raw": [0.0295418803128126, 0.0264376055027903, 0.03311086613137],
+      "note": ""
+    },
+    "gate_ext_sel80_optical_gate": {
+      "display": "0.047",
+      "raw": 0.0469558200191619,
+      "note": ""
+    },
+    "gate_ext_sel80_optical_gate_ci": {
+      "display": "0.047 (95% CI 0.041 to 0.054)",
+      "raw": [0.0469558200191619, 0.0406144913109177, 0.05408949901717],
+      "note": ""
+    },
+    "gate_ext_sel80_oracle": {
+      "display": "0.021",
+      "raw": 0.0214998473433337,
+      "note": ""
+    },
+    "gate_ext_sel80_oracle_ci": {
+      "display": "0.021 (95% CI 0.020 to 0.024)",
+      "raw": [0.0214998473433337, 0.0197344064251556, 0.0237328452790365],
+      "note": ""
+    },
+    "gate_ext_sel80_predicted_area": {
+      "display": "0.039",
+      "raw": 0.0385455462536037,
+      "note": ""
+    },
+    "gate_ext_sel80_predicted_area_ci": {
+      "display": "0.039 (95% CI 0.033 to 0.044)",
+      "raw": [0.0385455462536037, 0.0334850187964972, 0.0441506660571806],
+      "note": ""
+    },
+    "gate_ext_sel80_random": {
+      "display": "0.046",
+      "raw": 0.0460252168347243,
+      "note": ""
+    },
+    "gate_ext_sel80_random_ci": {
+      "display": "0.046 (95% CI 0.040 to 0.053)",
+      "raw": [0.0460252168347243, 0.0399146307981141, 0.0533108991376554],
+      "note": ""
+    },
+    "gate_ext_sel90_ens_disagreement": {
+      "display": "0.034",
+      "raw": 0.0338577462035682,
+      "note": ""
+    },
+    "gate_ext_sel90_ens_disagreement_ci": {
+      "display": "0.034 (95% CI 0.030 to 0.038)",
+      "raw": [0.0338577462035682, 0.0302001163210458, 0.0381201526021069],
+      "note": ""
+    },
+    "gate_ext_sel90_entropy": {
+      "display": "0.034",
+      "raw": 0.0342025771760331,
+      "note": ""
+    },
+    "gate_ext_sel90_entropy_ci": {
+      "display": "0.034 (95% CI 0.030 to 0.039)",
+      "raw": [0.0342025771760331, 0.0301899523723927, 0.0389670977904968],
+      "note": ""
+    },
+    "gate_ext_sel90_gate_plus_ensemble": {
+      "display": "0.034",
+      "raw": 0.0337282192110609,
+      "note": ""
+    },
+    "gate_ext_sel90_gate_plus_ensemble_ci": {
+      "display": "0.034 (95% CI 0.030 to 0.038)",
+      "raw": [0.0337282192110609, 0.0302647061428925, 0.0380747807187903],
+      "note": ""
+    },
+    "gate_ext_sel90_optical_gate": {
+      "display": "0.046",
+      "raw": 0.0458698828896331,
+      "note": ""
+    },
+    "gate_ext_sel90_optical_gate_ci": {
+      "display": "0.046 (95% CI 0.040 to 0.053)",
+      "raw": [0.0458698828896331, 0.0398815349539027, 0.0526711971347978],
+      "note": ""
+    },
+    "gate_ext_sel90_oracle": {
+      "display": "0.027",
+      "raw": 0.027207335290581,
+      "note": ""
+    },
+    "gate_ext_sel90_oracle_ci": {
+      "display": "0.027 (95% CI 0.025 to 0.031)",
+      "raw": [0.027207335290581, 0.0245753105812243, 0.0308668201080675],
+      "note": ""
+    },
+    "gate_ext_sel90_predicted_area": {
+      "display": "0.043",
+      "raw": 0.0431674415484996,
+      "note": ""
+    },
+    "gate_ext_sel90_predicted_area_ci": {
+      "display": "0.043 (95% CI 0.037 to 0.050)",
+      "raw": [0.0431674415484996, 0.0370288850791414, 0.0499304222077954],
+      "note": ""
+    },
+    "gate_ext_sel90_random": {
+      "display": "0.046",
+      "raw": 0.0460252168347243,
+      "note": ""
+    },
+    "gate_ext_sel90_random_ci": {
+      "display": "0.046 (95% CI 0.040 to 0.053)",
+      "raw": [0.0460252168347243, 0.0399146307981141, 0.0533108991376554],
+      "note": ""
+    },
+    "gate_ext_spec_sens50_optical_gate": {
+      "display": "0.36",
+      "raw": 0.355208333333333,
+      "note": ""
+    },
+    "gate_ext_spec_sens50_optical_gate_ci": {
+      "display": "0.36 (95% CI 0.28 to 0.47)",
+      "raw": [0.355208333333333, 0.280760710808179, 0.471617266508738],
+      "note": ""
+    },
+    "gate_ext_spec_sens90_optical_gate": {
+      "display": "0.06",
+      "raw": 0.0572916666666667,
+      "note": ""
+    },
+    "gate_ext_spec_sens90_optical_gate_ci": {
+      "display": "0.06 (95% CI 0.03 to 0.15)",
+      "raw": [0.0572916666666667, 0.0271489801950931, 0.145434103890024],
+      "note": ""
+    },
+    "gate_int_aurc_ens_disagreement": {
+      "display": "0.024",
+      "raw": 0.0238099542031122,
+      "note": ""
+    },
+    "gate_int_aurc_ens_disagreement_ci": {
+      "display": "0.024 (95% CI 0.021 to 0.028)",
+      "raw": [0.0238099542031122, 0.0210877685492157, 0.0275721319070814],
+      "note": ""
+    },
+    "gate_int_aurc_entropy": {
+      "display": "0.023",
+      "raw": 0.0233989354110149,
+      "note": ""
+    },
+    "gate_int_aurc_entropy_ci": {
+      "display": "0.023 (95% CI 0.021 to 0.027)",
+      "raw": [0.0233989354110149, 0.020644584008251, 0.0270991526893948],
+      "note": ""
+    },
+    "gate_int_aurc_gate_plus_ensemble": {
+      "display": "0.025",
+      "raw": 0.0248518997662424,
+      "note": ""
+    },
+    "gate_int_aurc_gate_plus_ensemble_ci": {
+      "display": "0.025 (95% CI 0.022 to 0.029)",
+      "raw": [0.0248518997662424, 0.0220906333343841, 0.0285864765568715],
+      "note": ""
+    },
+    "gate_int_aurc_optical_gate": {
+      "display": "0.042",
+      "raw": 0.0417664048270861,
+      "note": ""
+    },
+    "gate_int_aurc_optical_gate_ci": {
+      "display": "0.042 (95% CI 0.034 to 0.051)",
+      "raw": [0.0417664048270861, 0.0343420948080669, 0.0514235704879592],
+      "note": ""
+    },
+    "gate_int_aurc_oracle": {
+      "display": "0.019",
+      "raw": 0.0189337844654709,
+      "note": ""
+    },
+    "gate_int_aurc_oracle_ci": {
+      "display": "0.019 (95% CI 0.017 to 0.022)",
+      "raw": [0.0189337844654709, 0.0169826075003703, 0.0216922352758413],
+      "note": ""
+    },
+    "gate_int_aurc_predicted_area": {
+      "display": "0.038",
+      "raw": 0.0384743204017894,
+      "note": ""
+    },
+    "gate_int_aurc_predicted_area_ci": {
+      "display": "0.038 (95% CI 0.035 to 0.043)",
+      "raw": [0.0384743204017894, 0.0345604096279448, 0.043395566639359],
+      "note": ""
+    },
+    "gate_int_aurc_random": {
+      "display": "0.054",
+      "raw": 0.0537829429103598,
+      "note": ""
+    },
+    "gate_int_aurc_random_ci": {
+      "display": "0.054 (95% CI 0.046 to 0.062)",
+      "raw": [0.0537829429103598, 0.0458861514796707, 0.0619642693021541],
+      "note": ""
+    },
+    "gate_int_auroc_ens_disagreement": {
+      "display": "0.91",
+      "raw": 0.910316916792016,
+      "note": ""
+    },
+    "gate_int_auroc_ens_disagreement_ci": {
+      "display": "0.91 (95% CI 0.90 to 0.92)",
+      "raw": [0.910316916792016, 0.897900687605101, 0.92158767482008],
+      "note": ""
+    },
+    "gate_int_auroc_entropy": {
+      "display": "0.91",
+      "raw": 0.913953281784217,
+      "note": ""
+    },
+    "gate_int_auroc_entropy_ci": {
+      "display": "0.91 (95% CI 0.90 to 0.92)",
+      "raw": [0.913953281784217, 0.900405464338058, 0.924427010531449],
+      "note": ""
+    },
+    "gate_int_auroc_gate_plus_ensemble": {
+      "display": "0.91",
+      "raw": 0.910257259936385,
+      "note": ""
+    },
+    "gate_int_auroc_gate_plus_ensemble_ci": {
+      "display": "0.91 (95% CI 0.90 to 0.92)",
+      "raw": [0.910257259936385, 0.896004806526905, 0.92283705049807],
+      "note": ""
+    },
+    "gate_int_auroc_optical_gate": {
+      "display": "0.63",
+      "raw": 0.633601434971091,
+      "note": ""
+    },
+    "gate_int_auroc_optical_gate_ci": {
+      "display": "0.63 (95% CI 0.58 to 0.69)",
+      "raw": [0.633601434971091, 0.580305361255921, 0.685351559460789],
+      "note": ""
+    },
+    "gate_int_auroc_predicted_area": {
+      "display": "0.68",
+      "raw": 0.680211056633838,
+      "note": ""
+    },
+    "gate_int_auroc_predicted_area_ci": {
+      "display": "0.68 (95% CI 0.64 to 0.72)",
+      "raw": [0.680211056633838, 0.638229382682316, 0.71787951253085],
+      "note": ""
+    },
+    "gate_int_calint_gate_plus_ensemble": {
+      "display": "0.03",
+      "raw": 0.0321827051248449,
+      "note": ""
+    },
+    "gate_int_calint_gate_plus_ensemble_ci": {
+      "display": "0.03 (95% CI -0.24 to 0.24)",
+      "raw": [0.0321827051248449, -0.237154491604886, 0.244354030888949],
+      "note": ""
+    },
+    "gate_int_calint_optical_gate": {
+      "display": "0.02",
+      "raw": 0.0214379451516101,
+      "note": ""
+    },
+    "gate_int_calint_optical_gate_ci": {
+      "display": "0.02 (95% CI -0.28 to 0.28)",
+      "raw": [0.0214379451516101, -0.28202765119199, 0.283080580693479],
+      "note": ""
+    },
+    "gate_int_calint_predicted_area": {
+      "display": "0.00",
+      "raw": 0.00164110416202215,
+      "note": ""
+    },
+    "gate_int_calint_predicted_area_ci": {
+      "display": "0.00 (95% CI -0.40 to 0.29)",
+      "raw": [0.00164110416202215, -0.397029675438469, 0.291609633652085],
+      "note": ""
+    },
+    "gate_int_calslope_gate_plus_ensemble": {
+      "display": "0.99",
+      "raw": 0.98785040342536,
+      "note": ""
+    },
+    "gate_int_calslope_gate_plus_ensemble_ci": {
+      "display": "0.99 (95% CI 0.88 to 1.09)",
+      "raw": [0.98785040342536, 0.884228035105286, 1.09417264555753],
+      "note": ""
+    },
+    "gate_int_calslope_optical_gate": {
+      "display": "1.76",
+      "raw": 1.75730798856863,
+      "note": ""
+    },
+    "gate_int_calslope_optical_gate_ci": {
+      "display": "1.76 (95% CI 1.10 to 2.39)",
+      "raw": [1.75730798856863, 1.10489139600841, 2.38878837065768],
+      "note": ""
+    },
+    "gate_int_calslope_predicted_area": {
+      "display": "0.91",
+      "raw": 0.905738980284565,
+      "note": ""
+    },
+    "gate_int_calslope_predicted_area_ci": {
+      "display": "0.91 (95% CI 0.68 to 1.17)",
+      "raw": [0.905738980284565, 0.678204359766012, 1.16906141004848],
+      "note": ""
+    },
+    "gate_int_diff_aurc_gate_vs_area": {
+      "display": "0.003",
+      "raw": 0.00329208442529667,
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gate_vs_area_ci": {
+      "display": "0.003 (95% CI -0.001 to 0.010)",
+      "raw": [0.00329208442529667, -0.00135536708716467, 0.00989585063038586],
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gate_vs_ens": {
+      "display": "0.018",
+      "raw": 0.0179564506239739,
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gate_vs_ens_ci": {
+      "display": "0.018 (95% CI 0.013 to 0.024)",
+      "raw": [0.0179564506239739, 0.0128605142502156, 0.0244932430461993],
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gate_vs_entropy": {
+      "display": "0.018",
+      "raw": 0.0183674694160712,
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gate_vs_entropy_ci": {
+      "display": "0.018 (95% CI 0.013 to 0.025)",
+      "raw": [0.0183674694160712, 0.0133522776153887, 0.0248228404313338],
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gate_vs_random": {
+      "display": "-0.012",
+      "raw": -0.0120165380832737,
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gate_vs_random_ci": {
+      "display": "-0.012 (95% CI -0.015 to -0.007)",
+      "raw": [-0.0120165380832737, -0.0147746455164165, -0.00740185178358888],
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gateens_vs_ens": {
+      "display": "0.001",
+      "raw": 0.00104194556313018,
+      "note": "negative favours the first method"
+    },
+    "gate_int_diff_aurc_gateens_vs_ens_ci": {
+      "display": "0.001 (95% CI 0.000 to 0.002)",
+      "raw": [0.00104194556313018, 0.000476968893737097, 0.00183144032434353],
+      "note": "negative favours the first method"
+    },
+    "gate_int_sel80_ens_disagreement": {
+      "display": "0.033",
+      "raw": 0.0332834029840469,
+      "note": ""
+    },
+    "gate_int_sel80_ens_disagreement_ci": {
+      "display": "0.033 (95% CI 0.029 to 0.040)",
+      "raw": [0.0332834029840469, 0.0285790827171941, 0.0397660680373923],
+      "note": ""
+    },
+    "gate_int_sel80_entropy": {
+      "display": "0.033",
+      "raw": 0.0330106456280656,
+      "note": ""
+    },
+    "gate_int_sel80_entropy_ci": {
+      "display": "0.033 (95% CI 0.028 to 0.039)",
+      "raw": [0.0330106456280656, 0.0282700004597671, 0.0392160311435017],
+      "note": ""
+    },
+    "gate_int_sel80_gate_plus_ensemble": {
+      "display": "0.033",
+      "raw": 0.0333836538306168,
+      "note": ""
+    },
+    "gate_int_sel80_gate_plus_ensemble_ci": {
+      "display": "0.033 (95% CI 0.029 to 0.040)",
+      "raw": [0.0333836538306168, 0.0285634762459127, 0.0397994742337606],
+      "note": ""
+    },
+    "gate_int_sel80_optical_gate": {
+      "display": "0.048",
+      "raw": 0.0482370459548693,
+      "note": ""
+    },
+    "gate_int_sel80_optical_gate_ci": {
+      "display": "0.048 (95% CI 0.040 to 0.057)",
+      "raw": [0.0482370459548693, 0.0404273048374953, 0.0568905637686716],
+      "note": ""
+    },
+    "gate_int_sel80_oracle": {
+      "display": "0.027",
+      "raw": 0.0270776762668763,
+      "note": ""
+    },
+    "gate_int_sel80_oracle_ci": {
+      "display": "0.027 (95% CI 0.024 to 0.032)",
+      "raw": [0.0270776762668763, 0.0236605125476969, 0.0319008581404399],
+      "note": ""
+    },
+    "gate_int_sel80_predicted_area": {
+      "display": "0.045",
+      "raw": 0.0447119176948093,
+      "note": ""
+    },
+    "gate_int_sel80_predicted_area_ci": {
+      "display": "0.045 (95% CI 0.039 to 0.052)",
+      "raw": [0.0447119176948093, 0.039171462414635, 0.0523121109460709],
+      "note": ""
+    },
+    "gate_int_sel80_random": {
+      "display": "0.054",
+      "raw": 0.0537829429103598,
+      "note": ""
+    },
+    "gate_int_sel80_random_ci": {
+      "display": "0.054 (95% CI 0.046 to 0.062)",
+      "raw": [0.0537829429103598, 0.0458861514796707, 0.0619642693021541],
+      "note": ""
+    },
+    "gate_int_sel90_ens_disagreement": {
+      "display": "0.040",
+      "raw": 0.0400228884596637,
+      "note": ""
+    },
+    "gate_int_sel90_ens_disagreement_ci": {
+      "display": "0.040 (95% CI 0.034 to 0.047)",
+      "raw": [0.0400228884596637, 0.0343020108430037, 0.0474489582201465],
+      "note": ""
+    },
+    "gate_int_sel90_entropy": {
+      "display": "0.040",
+      "raw": 0.0397772728770542,
+      "note": ""
+    },
+    "gate_int_sel90_entropy_ci": {
+      "display": "0.040 (95% CI 0.034 to 0.047)",
+      "raw": [0.0397772728770542, 0.0336336094603844, 0.0470272037914585],
+      "note": ""
+    },
+    "gate_int_sel90_gate_plus_ensemble": {
+      "display": "0.040",
+      "raw": 0.0400407038507579,
+      "note": ""
+    },
+    "gate_int_sel90_gate_plus_ensemble_ci": {
+      "display": "0.040 (95% CI 0.034 to 0.048)",
+      "raw": [0.0400407038507579, 0.0341952043274789, 0.0475639218209555],
+      "note": ""
+    },
+    "gate_int_sel90_optical_gate": {
+      "display": "0.050",
+      "raw": 0.050385251357467,
+      "note": ""
+    },
+    "gate_int_sel90_optical_gate_ci": {
+      "display": "0.050 (95% CI 0.043 to 0.059)",
+      "raw": [0.050385251357467, 0.0426683391708213, 0.0585916014197345],
+      "note": ""
+    },
+    "gate_int_sel90_oracle": {
+      "display": "0.035",
+      "raw": 0.034530534682525,
+      "note": ""
+    },
+    "gate_int_sel90_oracle_ci": {
+      "display": "0.035 (95% CI 0.030 to 0.041)",
+      "raw": [0.034530534682525, 0.0295706365536879, 0.0407746868635433],
+      "note": ""
+    },
+    "gate_int_sel90_predicted_area": {
+      "display": "0.048",
+      "raw": 0.0478245671443705,
+      "note": ""
+    },
+    "gate_int_sel90_predicted_area_ci": {
+      "display": "0.048 (95% CI 0.041 to 0.056)",
+      "raw": [0.0478245671443705, 0.0413925191140073, 0.055601779641319],
+      "note": ""
+    },
+    "gate_int_sel90_random": {
+      "display": "0.054",
+      "raw": 0.0537829429103598,
+      "note": ""
+    },
+    "gate_int_sel90_random_ci": {
+      "display": "0.054 (95% CI 0.046 to 0.062)",
+      "raw": [0.0537829429103598, 0.0458861514796707, 0.0619642693021541],
+      "note": ""
+    },
+    "gate_int_spec_sens50_optical_gate": {
+      "display": "0.47",
+      "raw": 0.472942027238761,
+      "note": ""
+    },
+    "gate_int_spec_sens50_optical_gate_ci": {
+      "display": "0.47 (95% CI 0.36 to 0.75)",
+      "raw": [0.472942027238761, 0.361407658822313, 0.745237493624217],
+      "note": ""
+    },
+    "gate_int_spec_sens90_optical_gate": {
+      "display": "0.23",
+      "raw": 0.227190550801495,
+      "note": ""
+    },
+    "gate_int_spec_sens90_optical_gate_ci": {
+      "display": "0.23 (95% CI 0.14 to 0.33)",
+      "raw": [0.227190550801495, 0.136455639324916, 0.333261073805577],
+      "note": ""
+    }
+  }
+}

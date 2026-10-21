@@ -1,0 +1,16 @@
+failure_iou_threshold: 0.9
+epochs:
+  unet: 20
+  segformer: 20
+noninferiority_margin_aurc: null
+gate_rds_path: "work/models/gate_optical.rds"
+gate_rds_sha256: "e442ba478ebfb5e938ab863d4984192926e6520ecd07776ce5a86d53fcfef249"
+gate_area_rds_path: "work/models/gate_area.rds"
+gate_area_rds_sha256: "89f909951a680cef94d397ec6ca0bda353df1862c1e251ccaab9f065db2644a7"
+gate_stack_rds_path: "work/models/gate_stack.rds"
+gate_stack_rds_sha256: "f56a2d503e5c072c5150d21a63e6f923afebe7930d1b7d425b1ed6c7df13da4f"
+gate_folds_rds_path: "work/models/gate_folds.rds"
+gate_folds_rds_sha256: "a0920b07707556377fc5f7cee7423b94d40f8eb08537b7520c2eee40a1539994"
+entropy_baseline_choice: "entropy_roi"
+locked_at: "2026-10-20T13:49:35-0500"
+lock_fields_sha256: "88182341e66f45f20bb596ccc99bac8ab5ab09bbb0ef860424930ba859dbe3fb"

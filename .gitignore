@@ -1,0 +1,39 @@
+# Source data: the Spine Endoscopic Atlas is downloaded separately and unzipped
+# beside v1/. It is never committed.
+Spine endoscopic atlas/
+Spine endoscopic atlas.zip
+*.zip
+
+# Model weights are release assets, not repository files.
+*.pt
+
+# Python and R environments and caches
+.venv/
+v1/.venv/
+__pycache__/
+.pytest_cache/
+.Rhistory
+Rplots.pdf
+
+# macOS
+.DS_Store
+
+# Pipeline working directory. Everything under v1/work/ is regenerated except the
+# four fitted gate objects (the analysis lock hashes them) and the Figure 1B tile
+# script. Git cannot re-include a file whose parent directory is excluded, so each
+# parent is un-ignored in turn and its contents are ignored again.
+v1/work/*
+!v1/work/models/
+v1/work/models/*
+!v1/work/models/gate_*.rds
+!v1/work/qc/
+v1/work/qc/*
+!v1/work/qc/exhibits/
+v1/work/qc/exhibits/*
+!v1/work/qc/exhibits/fig1b_tiles.py
+
+# Exhibits regenerated in real mode. Only the PDF figures and CSV tables are tracked.
+# (derived/*.parquet is deliberately NOT ignored here: those files are committed.)
+v1/figures/*.png
+v1/figures/*.tif
+v1/tables/*.docx

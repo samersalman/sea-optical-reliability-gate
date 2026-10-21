@@ -1,0 +1,170 @@
+{
+  "script": "31_method_keys.R",
+  "entries": {
+    "m_accrual_period": {
+      "display": "1 January 2022 to 31 December 2023",
+      "raw": "1 January 2022 to 31 December 2023",
+      "note": "SEA article (PMC12491453) via manuscript/references-verified.md: operating period of the source videos"
+    },
+    "m_block_px": {
+      "display": "16",
+      "raw": 16,
+      "note": "python/optics_lib.py BLOCK: local-contrast block side on the 512 canvas"
+    },
+    "m_canon_px": {
+      "display": "512",
+      "raw": 512,
+      "note": "analysis_plan.yaml fov.canonical_diameter_px: optics canvas side"
+    },
+    "m_ci_level": {
+      "display": "95%",
+      "raw": 0.95,
+      "note": "analysis_plan.yaml statistics.ci_level"
+    },
+    "m_cov_primary": {
+      "display": "90%",
+      "raw": 0.9,
+      "note": "analysis_plan.yaml endpoints.coverage_levels[1]; also the stream flag coverage"
+    },
+    "m_cov_secondary": {
+      "display": "80%",
+      "raw": 0.8,
+      "note": "analysis_plan.yaml endpoints.coverage_levels[2]"
+    },
+    "m_data_licence": {
+      "display": "CC0",
+      "raw": "CC0",
+      "note": "Figshare licence field, manuscript/references-verified.md"
+    },
+    "m_dcp_px": {
+      "display": "15",
+      "raw": 15,
+      "note": "python/optics_lib.py DCP_PATCH: dark-channel patch side"
+    },
+    "m_epochs_segformer": {
+      "display": "20",
+      "raw": 20,
+      "note": "analysis_lock.yaml epochs.segformer, frozen at Gate G2"
+    },
+    "m_epochs_unet": {
+      "display": "20",
+      "raw": 20,
+      "note": "analysis_lock.yaml epochs.unet, frozen at Gate G2"
+    },
+    "m_erode_pct": {
+      "display": "2%",
+      "raw": 0.02,
+      "note": "analysis_plan.yaml fov.erode_frac: share of the FOV radius removed"
+    },
+    "m_g2_initial_iou": {
+      "display": "0.75",
+      "raw": 0.75,
+      "note": "G2_decision.md: failure threshold before the revision"
+    },
+    "m_g2_pilot_share": {
+      "display": "1.0%",
+      "raw": 0.010443864229765,
+      "note": "U-Net, fold-0 pilot, held-out frames below the original threshold (work/logs/g2_fold0_pilot_summary.json)"
+    },
+    "m_g2_pilot_share_revised": {
+      "display": "6.6%",
+      "raw": 0.0657963446475196,
+      "note": "U-Net, fold-0 pilot, held-out frames below the revised threshold (the fold-0 pilot underestimated the failure rate of all training-center frames)"
+    },
+    "m_hash_algorithm": {
+      "display": "SHA-256",
+      "raw": "SHA-256",
+      "note": "tools::sha256sum in R/stats_lib.R"
+    },
+    "m_input_px": {
+      "display": "384",
+      "raw": 384,
+      "note": "analysis_plan.yaml fov.segmenter_input_px: segmenter input side"
+    },
+    "m_lock_gap_min": {
+      "display": "33",
+      "raw": 33,
+      "note": "minutes from the last write of derived/predictions.parquet (segmentation scores of both centers, one inference run) to locked_at in analysis_lock.yaml"
+    },
+    "m_long_run_s": {
+      "display": "5",
+      "raw": 5,
+      "note": "analysis_plan.yaml stream.long_run_s (seconds; a run this long is sustained)"
+    },
+    "m_mask_threshold": {
+      "display": "0.50",
+      "raw": 0.5,
+      "note": "analysis_plan.yaml segmenters.mask_threshold: probability cut for the binary mask"
+    },
+    "m_min_events": {
+      "display": "30",
+      "raw": 30,
+      "note": "analysis_plan.yaml endpoints.min_external_failure_events"
+    },
+    "m_min_oof_iou": {
+      "display": "0.90",
+      "raw": 0.9,
+      "note": "analysis_plan.yaml perturbation.min_oof_iou"
+    },
+    "m_min_patients": {
+      "display": "10",
+      "raw": 10,
+      "note": "analysis_plan.yaml endpoints.min_external_patients_with_events"
+    },
+    "m_orig_margin": {
+      "display": "0.01",
+      "raw": 0.01,
+      "note": "original plan snapshot (work/snap/b0_setup): non-inferiority margin dropped at Gate G2"
+    },
+    "m_pilot_heldout_frames": {
+      "display": "1,915",
+      "raw": 1915,
+      "note": "work/logs/g2_fold0_pilot_summary.json: held-out frames scored in the pilot"
+    },
+    "m_pilot_heldout_patients": {
+      "display": "12",
+      "raw": 12,
+      "note": "work/logs/pilot_unet.log: fold-0 pilot, held-out patients (G2 decision frames)"
+    },
+    "m_pilot_train_patients": {
+      "display": "39",
+      "raw": 39,
+      "note": "work/logs/pilot_unet.log: fold-0 pilot, patients used for training"
+    },
+    "m_pilot_val_patients": {
+      "display": "10",
+      "raw": 10,
+      "note": "work/logs/pilot_unet.log: fold-0 pilot, inner-validation patients (epoch choice)"
+    },
+    "m_sat_level": {
+      "display": "0.98",
+      "raw": 0.98,
+      "note": "python/optics_lib.py SAT_LEVEL: a channel at or above this is saturated"
+    },
+    "m_table_s2": {
+      "display": "Table S2",
+      "raw": "Table S2",
+      "note": "label of supplementary Table S2 (tables/TableS2.docx), cited by the Methods"
+    },
+    "m_under_y": {
+      "display": "0.10",
+      "raw": 0.1,
+      "note": "python/optics_lib.py UNDER_Y: luminance below this is under-exposed"
+    },
+    "m_ver_glmnet": {
+      "display": "5.0",
+      "raw": "5.0",
+      "note": ""
+    },
+    "m_ver_python": {
+      "display": "3.12.10",
+      "raw": "3.12.10",
+      "note": "project venv"
+    },
+    "m_ver_r": {
+      "display": "4.6.0",
+      "raw": "4.6.0",
+      "note": "R used for all statistics"
+    }
+  }
+}

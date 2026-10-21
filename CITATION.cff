@@ -1,0 +1,92 @@
+cff-version: 1.2.0
+title: >-
+  Analysis code for "Optical Quality Metrics for Detecting Instrument
+  Segmentation Failure in Endoscopic Spine Surgery"
+message: If you use this software, please cite it using these metadata.
+type: software
+license: MIT
+repository-code: https://github.com/samersalman/sea-optical-reliability-gate
+version: 1.0.0
+# No doi: field yet. The Zenodo DOI is minted when the GitHub release v1.0.0 is
+# archived; add it here (and to the manuscript Code Availability Statement) after
+# that release exists. date-released is also left out until the release date is known.
+abstract: >-
+  Analysis pipeline for a retrospective external-validation study of whether
+  interpretable optical image-quality measurements can flag unreliable
+  instrument segmentations in endoscopic spine surgery, using the public
+  Spine Endoscopic Atlas (SEA). The repository holds the R and Python code,
+  the locked analysis settings, derived per-frame tables and aggregate
+  results. Apart from the six example frames drawn in Figure 1B, the SEA
+  images and masks are not included, and the trained checkpoints are
+  distributed as GitHub release assets rather than in the repository tree.
+keywords:
+  - endoscopic spine surgery
+  - surgical instrument segmentation
+  - artificial intelligence
+  - optical image quality
+  - segmentation failure detection
+  - external validation
+  - uncertainty quantification
+# Authors follow the order of the v3 manuscript. Zenodo reads this file to build the
+# DOI's citation record. Names and affiliations are copied from the manuscript title
+# page; no ORCID iDs appear there, so none are listed.
+authors:
+  - family-names: Salman
+    given-names: Samer G.
+    affiliation: School of Medicine, Baylor College of Medicine, Houston, TX, United States
+  - family-names: Phadke
+    given-names: Rohan A.
+    affiliation: School of Medicine, Baylor College of Medicine, Houston, TX, United States
+  - family-names: Salman
+    given-names: Zane G.
+    affiliation: College of Natural Sciences, The University of Texas at Austin, Austin, TX, United States
+  - family-names: Zeitouny
+    given-names: Ryan T.
+    affiliation: Department of Biomedical Sciences, Texas A&M University, College Station, TX, United States
+  - family-names: Yedupati
+    given-names: Sai M.
+    affiliation: College of Engineering and Applied Sciences, University of Cincinnati, Cincinnati, OH, United States
+  - family-names: Ong
+    given-names: Joshua
+    affiliation: Department of Ophthalmology, Harvard Medical School, Massachusetts Eye and Ear, Boston, MA, United States
+  - family-names: Tavakkoli
+    given-names: Alireza
+    affiliation: Department of Computer Science, University of Nevada, Reno, NV, United States
+  - family-names: Galhotra
+    given-names: Sainyam
+    affiliation: Department of Computer Science, Cornell University, Ithaca, NY, United States
+  - family-names: Tripuraneni
+    given-names: Ajay
+    affiliation: School of Medicine, Baylor College of Medicine, Houston, TX, United States
+  - family-names: Rizkalla
+    given-names: James
+    affiliation: Department of Orthopaedic Surgery, Baylor University Medical Center, Dallas, United States
+references:
+  - type: article
+    title: "Spine endoscopic atlas: an open-source dataset for surgical instrument segmentation"
+    doi: 10.1038/s41597-025-05897-7
+    journal: Scientific Data
+    year: 2025
+    authors:
+      - family-names: Xu
+        given-names: Zhipeng
+      - family-names: Wang
+        given-names: Hong
+      - family-names: Huang
+        given-names: Yongxian
+      - family-names: Zhang
+        given-names: Jianjin
+      - family-names: Chen
+        given-names: Yanhong
+      - family-names: Wu
+        given-names: Shangjie
+      - family-names: Hu
+        given-names: Zhouyang
+      - family-names: Yue
+        given-names: Guanghui
+      - family-names: Luo
+        given-names: Jax
+      - family-names: Fan
+        given-names: Guoxin
+      - family-names: Liao
+        given-names: Xiang

@@ -1,0 +1,550 @@
+{
+  "script": "34_diagnostics.R",
+  "entries": {
+    "diag_calib_c1_mean_pred": {
+      "display": "13.2%",
+      "raw": 0.132366326287243,
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - mean predicted failure probability, Center 1, out-of-fold links"
+    },
+    "diag_calib_c1_observed": {
+      "display": "13.5%",
+      "raw": 0.134827945776846,
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - observed failure rate, Center 1, out-of-fold links"
+    },
+    "diag_calib_c1_offset": {
+      "display": "-0.2%",
+      "raw": -0.00246161948960325,
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - mean predicted minus observed, Center 1, out-of-fold links"
+    },
+    "diag_calib_c1_offset_ci": {
+      "display": "-0.2% (95% CI -4.0% to 2.6%)",
+      "raw": [-0.00246161948960325, -0.0400106993318513, 0.0259521499181563],
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - mean predicted minus observed failure rate, percentage points of frames, Center 1, out-of-fold links"
+    },
+    "diag_calib_c1_sd_pred": {
+      "display": "3.0%",
+      "raw": 0.0301246096907223,
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - SD of the predicted probability, Center 1, out-of-fold links"
+    },
+    "diag_calib_c2_mean_pred": {
+      "display": "14.4%",
+      "raw": 0.144045562120535,
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - mean predicted failure probability, Center 2"
+    },
+    "diag_calib_c2_observed": {
+      "display": "10.2%",
+      "raw": 0.101964452759588,
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - observed failure rate, Center 2"
+    },
+    "diag_calib_c2_offset": {
+      "display": "4.2%",
+      "raw": 0.0420811093609466,
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - mean predicted minus observed, Center 2"
+    },
+    "diag_calib_c2_offset_ci": {
+      "display": "4.2% (95% CI 1.1% to 6.8%)",
+      "raw": [0.0420811093609466, 0.0112553003839048, 0.0683646687232614],
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - mean predicted minus observed failure rate, percentage points of frames, Center 2"
+    },
+    "diag_calib_c2_sd_pred": {
+      "display": "1.7%",
+      "raw": 0.0173024148047709,
+      "note": "post hoc calibration diagnostic (diag_calibration.csv), final gate - SD of the predicted probability, Center 2"
+    },
+    "diag_dom_d1_aurc_entropy": {
+      "display": "0.022",
+      "raw": 0.0224851761925488,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AURC"
+    },
+    "diag_dom_d1_aurc_entropy_ci": {
+      "display": "0.022 (95% CI 0.020 to 0.026)",
+      "raw": [0.0224851761925488, 0.0197120201962084, 0.0263344724810997],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AURC"
+    },
+    "diag_dom_d1_aurc_gate": {
+      "display": "0.039",
+      "raw": 0.0391393227914437,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AURC"
+    },
+    "diag_dom_d1_aurc_gate_ci": {
+      "display": "0.039 (95% CI 0.032 to 0.049)",
+      "raw": [0.0391393227914437, 0.0323145154836512, 0.0491664969733909],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AURC"
+    },
+    "diag_dom_d1_aurc_random": {
+      "display": "0.051",
+      "raw": 0.0511174752020686,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AURC"
+    },
+    "diag_dom_d1_aurc_random_ci": {
+      "display": "0.051 (95% CI 0.043 to 0.060)",
+      "raw": [0.0511174752020686, 0.0429267585073988, 0.0603269074645976],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AURC"
+    },
+    "diag_dom_d1_auroc_entropy": {
+      "display": "0.92",
+      "raw": 0.915315463222596,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AUROC for failure"
+    },
+    "diag_dom_d1_auroc_entropy_ci": {
+      "display": "0.92 (95% CI 0.90 to 0.93)",
+      "raw": [0.915315463222596, 0.90133140749257, 0.925774114362624],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AUROC for failure"
+    },
+    "diag_dom_d1_auroc_gate": {
+      "display": "0.66",
+      "raw": 0.659960814665791,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AUROC for failure"
+    },
+    "diag_dom_d1_auroc_gate_ci": {
+      "display": "0.66 (95% CI 0.60 to 0.71)",
+      "raw": [0.659960814665791, 0.60074403829727, 0.710615921045566],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - AUROC for failure"
+    },
+    "diag_dom_d1_diff_aurc_gate_random": {
+      "display": "-0.012",
+      "raw": -0.0119781524106249,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - gate minus random AURC, negative favours the gate"
+    },
+    "diag_dom_d1_diff_aurc_gate_random_ci": {
+      "display": "-0.012 (95% CI -0.015 to -0.007)",
+      "raw": [-0.0119781524106249, -0.0148350146201192, -0.00730978627463646],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1 - gate minus random AURC, negative favours the gate"
+    },
+    "diag_dom_d1_n_events": {
+      "display": "989",
+      "raw": 989,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1"
+    },
+    "diag_dom_d1_n_frames": {
+      "display": "7,973",
+      "raw": 7973,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1"
+    },
+    "diag_dom_d1_n_patients": {
+      "display": "41",
+      "raw": 41,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D1"
+    },
+    "diag_dom_d2_aurc_entropy": {
+      "display": "0.028",
+      "raw": 0.0282477708883551,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AURC"
+    },
+    "diag_dom_d2_aurc_entropy_ci": {
+      "display": "0.028 (95% CI 0.022 to 0.037)",
+      "raw": [0.0282477708883551, 0.021720221368635, 0.0368006512299046],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AURC"
+    },
+    "diag_dom_d2_aurc_gate": {
+      "display": "0.058",
+      "raw": 0.0582520778316126,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AURC"
+    },
+    "diag_dom_d2_aurc_gate_ci": {
+      "display": "0.058 (95% CI 0.042 to 0.075)",
+      "raw": [0.0582520778316126, 0.0419240952737004, 0.0749919474999546],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AURC"
+    },
+    "diag_dom_d2_aurc_random": {
+      "display": "0.067",
+      "raw": 0.0669256603118475,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AURC"
+    },
+    "diag_dom_d2_aurc_random_ci": {
+      "display": "0.067 (95% CI 0.050 to 0.085)",
+      "raw": [0.0669256603118475, 0.0496227311233954, 0.0852884543498335],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AURC"
+    },
+    "diag_dom_d2_auroc_entropy": {
+      "display": "0.91",
+      "raw": 0.906584459053193,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AUROC for failure"
+    },
+    "diag_dom_d2_auroc_entropy_ci": {
+      "display": "0.91 (95% CI 0.89 to 0.93)",
+      "raw": [0.906584459053193, 0.892316608629552, 0.926398105533028],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AUROC for failure"
+    },
+    "diag_dom_d2_auroc_gate": {
+      "display": "0.52",
+      "raw": 0.517777688700044,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AUROC for failure"
+    },
+    "diag_dom_d2_auroc_gate_ci": {
+      "display": "0.52 (95% CI 0.48 to 0.57)",
+      "raw": [0.517777688700044, 0.476607869755172, 0.565648598525294],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - AUROC for failure"
+    },
+    "diag_dom_d2_diff_aurc_gate_random": {
+      "display": "-0.009",
+      "raw": -0.00867358248023489,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - gate minus random AURC, negative favours the gate"
+    },
+    "diag_dom_d2_diff_aurc_gate_random_ci": {
+      "display": "-0.009 (95% CI -0.015 to -0.003)",
+      "raw": [-0.00867358248023489, -0.0145370105622002, -0.00306252826222001],
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2 - gate minus random AURC, negative favours the gate"
+    },
+    "diag_dom_d2_n_events": {
+      "display": "304",
+      "raw": 304,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2"
+    },
+    "diag_dom_d2_n_frames": {
+      "display": "1,617",
+      "raw": 1617,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2"
+    },
+    "diag_dom_d2_n_patients": {
+      "display": "20",
+      "raw": 20,
+      "note": "post hoc within-domain diagnostic, Center 1 out-of-fold (diag_within_domain.csv) - D2"
+    },
+    "diag_flag_band_over_sd": {
+      "display": "1.25",
+      "raw": 1.25497134347088,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - band width over the final-gate SD on Center 1"
+    },
+    "diag_flag_band_share_c1_final": {
+      "display": "13.7%",
+      "raw": 0.136600625651721,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center1_final - share of frames between the two cutoffs"
+    },
+    "diag_flag_band_share_c1_oof": {
+      "display": "10.0%",
+      "raw": 0.1,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center1_oof - share of frames between the two cutoffs"
+    },
+    "diag_flag_band_share_c2": {
+      "display": "32.6%",
+      "raw": 0.326473339569691,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center2_final - share of frames between the two cutoffs"
+    },
+    "diag_flag_band_share_stream": {
+      "display": "22.5%",
+      "raw": 0.225339079396135,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - stream_final - share of frames between the two cutoffs"
+    },
+    "diag_flag_band_width": {
+      "display": "0.178",
+      "raw": 0.177522230624936,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - distance in log-odds between the two cutoffs"
+    },
+    "diag_flag_c1_final_share_80": {
+      "display": "19.2%",
+      "raw": 0.192283628779979,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center1_final - 80% coverage cutoff"
+    },
+    "diag_flag_c1_final_share_80_hi": {
+      "display": "25.3%",
+      "raw": 0.252910326217058,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - patient-clustered 95% upper limit"
+    },
+    "diag_flag_c1_final_share_80_lo": {
+      "display": "13.8%",
+      "raw": 0.138453056612455,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - patient-clustered 95% lower limit"
+    },
+    "diag_flag_c1_final_share_90": {
+      "display": "5.6%",
+      "raw": 0.0556830031282586,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center1_final - 90% coverage cutoff"
+    },
+    "diag_flag_c1_final_share_90_hi": {
+      "display": "7.8%",
+      "raw": 0.0782825429981754,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - patient-clustered 95% upper limit"
+    },
+    "diag_flag_c1_final_share_90_lo": {
+      "display": "3.6%",
+      "raw": 0.0364827527569943,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - patient-clustered 95% lower limit"
+    },
+    "diag_flag_c1_oof_share_80": {
+      "display": "20.0%",
+      "raw": 0.2,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center1_oof - 80% coverage cutoff"
+    },
+    "diag_flag_c1_oof_share_90": {
+      "display": "10.0%",
+      "raw": 0.1,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center1_oof - 90% coverage cutoff"
+    },
+    "diag_flag_c2_share_80": {
+      "display": "39.0%",
+      "raw": 0.390084190832554,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center2_final - 80% coverage cutoff"
+    },
+    "diag_flag_c2_share_90": {
+      "display": "6.4%",
+      "raw": 0.0636108512628625,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - center2_final - 90% coverage cutoff"
+    },
+    "diag_flag_iqr_final": {
+      "display": "0.166",
+      "raw": 0.165843656597404,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - IQR of the final-gate log-odds on Center 1"
+    },
+    "diag_flag_iqr_oof": {
+      "display": "0.202",
+      "raw": 0.202412639841274,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - IQR of the out-of-fold log-odds"
+    },
+    "diag_flag_sd_final": {
+      "display": "0.141",
+      "raw": 0.141455206565882,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - SD of the final gate log-odds on Center 1 (in-sample)"
+    },
+    "diag_flag_sd_final_c2": {
+      "display": "0.139",
+      "raw": 0.139230610568258,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - SD of the final gate log-odds on Center 2"
+    },
+    "diag_flag_sd_oof": {
+      "display": "0.243",
+      "raw": 0.243097887537323,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - SD of the Center 1 out-of-fold gate log-odds (pooled fold gates)"
+    },
+    "diag_flag_sd_ratio": {
+      "display": "0.58",
+      "raw": 0.581885790941579,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - final over out-of-fold SD"
+    },
+    "diag_flag_stream_share_80": {
+      "display": "25.9%",
+      "raw": 0.258652142876028,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - stream_final - 80% coverage cutoff"
+    },
+    "diag_flag_stream_share_90": {
+      "display": "3.3%",
+      "raw": 0.0333130634798932,
+      "note": "post hoc flag-share diagnostic (diag_flag_shares.csv); final gate at the locked Center 1 out-of-fold cutoffs - stream_final - 90% coverage cutoff"
+    },
+    "diag_nz_const_variants": {
+      "display": "Background-only features; Device-normalized features; Fit on D2, score external center; Fit on D2, score D1",
+      "raw": "Background-only features; Device-normalized features; Fit on D2, score external center; Fit on D2, score D1",
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - labels of those variants"
+    },
+    "diag_nz_final_candidate": {
+      "display": "33",
+      "raw": 33,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - candidate spline terms offered to the penalised fit"
+    },
+    "diag_nz_final_epc": {
+      "display": "323",
+      "raw": 323.25,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - failures per non-zero coefficient"
+    },
+    "diag_nz_final_epc_candidate": {
+      "display": "39",
+      "raw": 39.1818181818182,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - failures per candidate term"
+    },
+    "diag_nz_final_events": {
+      "display": "1,293",
+      "raw": 1293,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - Center 1 failures the locked gate was fitted on"
+    },
+    "diag_nz_final_lambda": {
+      "display": "0.0994",
+      "raw": 0.0993963031214929,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - penalty of the locked gate (1-SE rule)"
+    },
+    "diag_nz_final_metrics": {
+      "display": "3",
+      "raw": 3,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - distinct metrics behind them"
+    },
+    "diag_nz_final_terms": {
+      "display": "4",
+      "raw": 4,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - non-zero penalised coefficients in the locked gate"
+    },
+    "diag_nz_fold_n_constant": {
+      "display": "1",
+      "raw": 1,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - fold gates whose held-out scores are all equal"
+    },
+    "diag_nz_fold_terms_max": {
+      "display": "9",
+      "raw": 9,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - most non-zero coefficients in a fold gate"
+    },
+    "diag_nz_fold_terms_median": {
+      "display": "6",
+      "raw": 6,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - median over the fold gates"
+    },
+    "diag_nz_fold_terms_min": {
+      "display": "0",
+      "raw": 0,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - fewest non-zero coefficients in a fold gate"
+    },
+    "diag_nz_n_const_ext": {
+      "display": "3",
+      "raw": 3,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - of those, variants scored on Center 2"
+    },
+    "diag_nz_n_const_variants": {
+      "display": "4",
+      "raw": 4,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - variants whose evaluation scores are all equal (a constant score)"
+    },
+    "diag_nz_n_reproduced": {
+      "display": "11",
+      "raw": 11,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - variants whose re-fitted AURC equals sensitivity.csv to 1e-12"
+    },
+    "diag_nz_n_variants": {
+      "display": "11",
+      "raw": 11,
+      "note": "post hoc gate-fit diagnostic (diag_gate_nonzero.csv) - sensitivity variants re-fitted"
+    },
+    "diag_or_contrast_local_gtarea_ci": {
+      "display": "0.61 (95% CI 0.47 to 0.80)",
+      "raw": [0.614797216779186, 0.474767102225613, 0.796128493291889],
+      "note": "post hoc odds-ratio robustness (diag_or_robustness.csv), Center 1 out-of-fold, one metric at a time - adjusted OR with the ground-truth instrument area instead of the predicted area, per SD"
+    },
+    "diag_or_n_excl1_boot": {
+      "display": "7",
+      "raw": 7,
+      "note": "post hoc odds-ratio robustness (diag_or_robustness.csv), Center 1 out-of-fold, one metric at a time - metrics whose patient-clustered bootstrap percentile 95% CI excludes one"
+    },
+    "diag_or_n_excl1_gtarea": {
+      "display": "7",
+      "raw": 7,
+      "note": "post hoc odds-ratio robustness (diag_or_robustness.csv), Center 1 out-of-fold, one metric at a time - metrics whose Wald 95% CI excludes one with the ground-truth area covariate"
+    },
+    "diag_or_n_excl1_wald": {
+      "display": "7",
+      "raw": 7,
+      "note": "post hoc odds-ratio robustness (diag_or_robustness.csv), Center 1 out-of-fold, one metric at a time - metrics whose cluster-robust Wald 95% CI excludes one (primary specification)"
+    },
+    "diag_or_red_dom_gtarea_ci": {
+      "display": "1.36 (95% CI 1.16 to 1.59)",
+      "raw": [1.35569012944788, 1.15727523207284, 1.58812327106534],
+      "note": "post hoc odds-ratio robustness (diag_or_robustness.csv), Center 1 out-of-fold, one metric at a time - adjusted OR with the ground-truth instrument area instead of the predicted area, per SD"
+    },
+    "diag_or_sharp_tenengrad_gtarea_ci": {
+      "display": "0.56 (95% CI 0.43 to 0.74)",
+      "raw": [0.564657804532029, 0.428576881686314, 0.743946885245894],
+      "note": "post hoc odds-ratio robustness (diag_or_robustness.csv), Center 1 out-of-fold, one metric at a time - adjusted OR with the ground-truth instrument area instead of the predicted area, per SD of log value"
+    },
+    "diag_shift_domain_auroc": {
+      "display": "0.991",
+      "raw": 0.990811484132891,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - patient-grouped out-of-fold AUROC of a logistic regression separating the centers on the 11 standardised metrics"
+    },
+    "diag_shift_domain_auroc_ci": {
+      "display": "0.991 (95% CI 0.984 to 0.996)",
+      "raw": [0.990811484132891, 0.98373827006949, 0.996349359256041],
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - patient-grouped out-of-fold AUROC of a logistic regression separating the centers on the 11 standardised metrics"
+    },
+    "diag_shift_domain_auroc_excl_top3": {
+      "display": "0.855",
+      "raw": 0.855109440278744,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - same without the three metrics that separate the centers most: under_frac, lum_mean, haze_dcp"
+    },
+    "diag_shift_domain_auroc_excl_under": {
+      "display": "0.985",
+      "raw": 0.984622467861459,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - same without the under-exposed fraction"
+    },
+    "diag_shift_haze_above_p95": {
+      "display": "61.1%",
+      "raw": 0.610851262862488,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - share of Center 2 frames above the Center 1 95th percentile, haze_dcp"
+    },
+    "diag_shift_haze_std_diff": {
+      "display": "1.91",
+      "raw": 1.91425666356365,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - standardised median difference, haze_dcp"
+    },
+    "diag_shift_lum_above_p95": {
+      "display": "80.7%",
+      "raw": 0.807296538821328,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - share of Center 2 frames above the Center 1 95th percentile, lum_mean"
+    },
+    "diag_shift_lum_std_diff": {
+      "display": "2.19",
+      "raw": 2.19207885782218,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - standardised median difference, lum_mean"
+    },
+    "diag_shift_maha_above_p95": {
+      "display": "24.9%",
+      "raw": 0.248830682881197,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - share of Center 2 frames beyond the 95th percentile of the Center 1 out-of-fold distance"
+    },
+    "diag_shift_maha_c1": {
+      "display": "2.92",
+      "raw": 2.91619790911008,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - median Mahalanobis distance, Center 1 out-of-fold frames"
+    },
+    "diag_shift_maha_c2": {
+      "display": "4.50",
+      "raw": 4.5021131391822,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - median Mahalanobis distance of Center 2 frames in Center 1 metric space"
+    },
+    "diag_shift_maha_ratio": {
+      "display": "1.54",
+      "raw": 1.54382976721772,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - Center 2 median over Center 1 out-of-fold median"
+    },
+    "diag_shift_max_abs_std_diff": {
+      "display": "2.19",
+      "raw": 2.19207885782218,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - largest absolute standardised median difference over the 11 metrics"
+    },
+    "diag_shift_max_abs_std_diff_metric": {
+      "display": "Mean luminance",
+      "raw": "Mean luminance",
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - the metric with the largest absolute standardised median difference"
+    },
+    "diag_shift_n_c1": {
+      "display": "9,590",
+      "raw": 9590,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - Center 1 labeled analysed frames"
+    },
+    "diag_shift_n_c2": {
+      "display": "1,069",
+      "raw": 1069,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - Center 2 labeled analysed frames"
+    },
+    "diag_shift_n_over_half_sd": {
+      "display": "3",
+      "raw": 3,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - metrics whose median moved by at least half a Center 1 SD"
+    },
+    "diag_shift_other_max_outside_range": {
+      "display": "0.19%",
+      "raw": 0.00187090739008419,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - largest share of Center 2 frames outside the Center 1 range, over the 10 metrics other than the under-exposed fraction"
+    },
+    "diag_shift_under_below_min": {
+      "display": "90.4%",
+      "raw": 0.903648269410664,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - share of Center 2 frames below the Center 1 minimum of the under-exposed fraction"
+    },
+    "diag_shift_under_excursion_sd": {
+      "display": "0.007",
+      "raw": 0.00677784194499805,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - mean distance below the Center 1 minimum, in Center 1 SD, among the frames below it"
+    },
+    "diag_shift_under_median_c1": {
+      "display": "2.871%",
+      "raw": 0.0287092108191216,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - median under-exposed fraction, Center 1"
+    },
+    "diag_shift_under_median_c2": {
+      "display": "0.016%",
+      "raw": 0.0001567842042443,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - median under-exposed fraction, Center 2"
+    },
+    "diag_shift_under_std_diff": {
+      "display": "-0.31",
+      "raw": -0.310710133087909,
+      "note": "post hoc covariate-shift diagnostic, Center 2 relative to Center 1 (diag_covariate_shift.csv) - (Center 2 median minus Center 1 median) / Center 1 SD"
+    }
+  }
+}
