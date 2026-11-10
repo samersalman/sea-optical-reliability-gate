@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 title: >-
-  Analysis code for "Optical Quality Metrics for Detecting Instrument
-  Segmentation Failure in Endoscopic Spine Surgery"
+  Analysis code for "External Validation of an Optical-Metric Reliability Gate for
+  Detecting Instrument Segmentation Failure in Endoscopic Spine Surgery"
 message: If you use this software, please cite it using these metadata.
 type: software
 license: MIT
 repository-code: https://github.com/samersalman/sea-optical-reliability-gate
-version: 1.0.0
-# No doi: field yet. The Zenodo DOI is minted when the GitHub release v1.0.0 is
+version: 1.0.1
+# No doi: field yet. The Zenodo DOI is minted when the GitHub release v1.0.1 is
 # archived; add it here (and to the manuscript Code Availability Statement) after
 # that release exists. date-released is also left out until the release date is known.
 abstract: >-

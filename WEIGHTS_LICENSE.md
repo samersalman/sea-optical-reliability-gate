@@ -4,7 +4,7 @@ Checked 2026-10-20 against the sources linked below. This file is not legal advi
 
 ## 1. Files covered
 
-The release `v1.0.0` carries 12 PyTorch `state_dict` checkpoint files (SHA-256 values in `v1/config/history/weights_sha256.txt`) and two companion files, `LICENSE-NVIDIA-SegFormer.txt` (section 3) and `SHA256SUMS`. All parameters were trained on SEA Center 1 frames (`v1/python/04_train.py`); nothing is frozen.
+The release `v1.0.1` carries 12 PyTorch `state_dict` checkpoint files (SHA-256 values in `v1/config/history/weights_sha256.txt`) and two companion files, `LICENSE-NVIDIA-SegFormer.txt` (section 3) and `SHA256SUMS`. All parameters were trained on SEA Center 1 frames (`v1/python/04_train.py`); nothing is frozen.
 
 The architecture and checkpoint identifiers are not string literals in `models.py`. They are set under `segmenters.models` in `v1/config/analysis_plan.yaml`, and `v1/python/models.py` reads them.
 

@@ -42,7 +42,7 @@ v1/
 
 Not in this repository:
 - SEA images and masks. The only SEA frames here are the six examples drawn in Figure 1B (`v1/figures/Figure1.pdf`).
-- The 12 trained checkpoints (about 650 MB in total). They are assets of GitHub release v1.0.0.
+- The 12 trained checkpoints (about 650 MB in total). They are assets of GitHub release v1.0.1.
 - Manuscript drafts and the manuscript-assembly scripts `R/31_method_keys.R`, `R/32_text_keys.R`, `R/33_claim_check.R` and `R/40_render.R`. One exception: `R/30_bundle.R` is included because four tests source it. It merges `results/parts/*.json` into `results/results.json` and `results/numbers-ledger.md`. The parts `31_method_keys.json` and `32_text_keys.json` are shipped because `results.json` includes them, but the scripts that wrote them are not.
 - Built exhibits: the Word, PNG and TIF versions of figures and tables. Only the PDF figures and CSV tables are kept. A rerun writes the other formats, and `.gitignore` excludes them.
 - The Python environment (`v1/.venv`), logs, and the rest of `v1/work/`.
@@ -120,14 +120,14 @@ for t in test_tables test_fig23; do Rscript v1/R/tests/$t.R; done
 
 ## Weights
 
-The 12 checkpoints are assets of release v1.0.0: `unet_fold0.pt` to `unet_fold4.pt`, `unet_final.pt`, `segformer_fold0.pt` to `segformer_fold4.pt` and `segformer_final.pt`. The release also carries `SHA256SUMS` and `LICENSE-NVIDIA-SegFormer.txt`. Fold k models score Center 1 patients in fold k; the final models trained on all Center 1 frames score Center 2 and the stream.
+The 12 checkpoints are assets of release v1.0.1: `unet_fold0.pt` to `unet_fold4.pt`, `unet_final.pt`, `segformer_fold0.pt` to `segformer_fold4.pt` and `segformer_final.pt`. The release also carries `SHA256SUMS` and `LICENSE-NVIDIA-SegFormer.txt`. Fold k models score Center 1 patients in fold k; the final models trained on all Center 1 frames score Center 2 and the stream.
 
 ```
-gh release download v1.0.0 -R samersalman/sea-optical-reliability-gate --dir v1/work/models
+gh release download v1.0.1 -R samersalman/sea-optical-reliability-gate --dir v1/work/models
 cd v1/work/models && shasum -a 256 -c SHA256SUMS
 ```
 
-Without `gh`, fetch each file with `curl -L -O`, for example from `https://github.com/samersalman/sea-optical-reliability-gate/releases/download/v1.0.0/unet_fold0.pt`. The same hashes are in `v1/config/history/weights_sha256.txt`; from `v1/work/models` run `shasum -a 256 -c ../../config/history/weights_sha256.txt`. The `.pt` files are release assets and are not part of the repository source archive.
+Without `gh`, fetch each file with `curl -L -O`, for example from `https://github.com/samersalman/sea-optical-reliability-gate/releases/download/v1.0.1/unet_fold0.pt`. The same hashes are in `v1/config/history/weights_sha256.txt`; from `v1/work/models` run `shasum -a 256 -c ../../config/history/weights_sha256.txt`. The `.pt` files are release assets and are not part of the repository source archive.
 
 Licenses, as set out in `WEIGHTS_LICENSE.md`: the U-Net checkpoints are MIT for the authors' part, and the ImageNet-pretrained ResNet34 initialization carries its own terms. The SegFormer checkpoints are distributed under the NVIDIA Source Code License for SegFormer, which limits use to research or evaluation, with a copy of that license attached to the release. Read `WEIGHTS_LICENSE.md` before reuse.
 
@@ -165,4 +165,8 @@ An MPS finding shaped the code: on the authors' Apple GPU, PyTorch `grid_sample`
 
 See `CITATION.cff` (GitHub shows a "Cite this repository" button). Please also cite the SEA descriptor (Xu et al., doi:10.1038/s41597-025-05897-7) and, if you use the SegFormer checkpoints, Xie et al. 2021, arXiv:2105.15203.
 
-Zenodo DOI: to be added at release
+Zenodo DOI: to be added once the Zenodo archive of release v1.0.1 exists.
+
+## Changes since v1.0.0
+
+v1.0.1 regenerates Figure 1 with larger text (`v1/R/10_fig1.R` layout and font sizes, and `v1/figures/Figure1.pdf`) and updates `CITATION.cff` to the current title. No analysis code, model, locked setting, derived table or result changed. The 12 checkpoints are assets of release v1.0.1; release v1.0.0 was published without them.
