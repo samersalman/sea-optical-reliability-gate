@@ -1,0 +1,11 @@
+{
+ "n_rows": 21318,
+ "max_abs_diff_vs_stored": {
+  "iou": 0.0,
+  "entropy_fov": 0.0,
+  "ens_dis": 0.0
+ },
+ "biou_band_frac_of_diagonal": 0.02,
+ "wall_s": 11463.8,
+ "device": "mps"
+}

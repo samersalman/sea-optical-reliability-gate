@@ -36,6 +36,8 @@ v1/
   tables/    Table1 to Table3 and TableS1 to TableS3 as csv
   figures/   Figure1 to Figure3 as pdf
   work/      models/gate_*.rds (the four locked gate objects), qc/exhibits/fig1b_tiles.py
+revision2/  post hoc analyses added during peer review (revision2/README.md); exploratory, the locked
+            gate is unchanged
 ```
 
 `config/history/` holds the original plan, a copy of the lock taken at lock time, `pip_freeze.txt`, `r_sessioninfo.txt` and `weights_sha256.txt`. `config/CONTRACTS.md` defines every derived table. `config/G2_decision.md` and `CONTRACTS.md` are historical records and name some files under `v1/work/` that are not shipped.

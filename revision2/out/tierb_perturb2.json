@@ -1,0 +1,26 @@
+{
+ "n_rows": 20000,
+ "local_area_frac": 0.25,
+ "severities": [
+  3,
+  5
+ ],
+ "local_families": [
+  "defocus",
+  "haze",
+  "exposure_under",
+  "exposure_over",
+  "blood_absorption",
+  "noise"
+ ],
+ "pairs": [
+  "defocus+haze",
+  "haze+exposure_under",
+  "blood_absorption+exposure_under",
+  "exposure_over+glare",
+  "defocus+noise",
+  "glare+noise"
+ ],
+ "wall_s": 6812.2,
+ "device": "mps"
+}

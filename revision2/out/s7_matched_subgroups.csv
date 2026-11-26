@@ -1,0 +1,36 @@
+"stat","est","lo","hi","analysis","n_frames","n_patients","status","nonzero_metrics"
+"aurc_gate",0.0304928914397503,0.0262352332173779,0.0353984267066388,"Locked gate OOF, training-center frames matched to external acquisition (small channel, PNG)",4163,50,"exploratory",NA
+"aurc_random",0.0361098631106457,0.031344579487844,0.0417154057782098,"Locked gate OOF, training-center frames matched to external acquisition (small channel, PNG)",4163,50,"exploratory",NA
+"diff",-0.00561697167089535,-0.00856242667107001,-0.0025744373647479,"Locked gate OOF, training-center frames matched to external acquisition (small channel, PNG)",4163,50,"exploratory",NA
+"auroc",0.605699753504286,0.563545722387065,0.648376358236272,"Locked gate OOF, training-center frames matched to external acquisition (small channel, PNG)",4163,50,"exploratory",NA
+"events",280,200.975,377,"Locked gate OOF, training-center frames matched to external acquisition (small channel, PNG)",4163,50,"exploratory",NA
+"aurc_gate",0.0416609924374113,0.0354273146186544,0.0512448841891809,"Gate refitted on matched training-center frames (small channel, PNG), scored at external center",1069,38,"exploratory","contrast_rms sharp_tenengrad haze_dcp illum_slope lum_entropy"
+"aurc_random",0.0460252168347243,0.0399146307981141,0.0533108991376554,"Gate refitted on matched training-center frames (small channel, PNG), scored at external center",1069,38,"exploratory","contrast_rms sharp_tenengrad haze_dcp illum_slope lum_entropy"
+"diff",-0.00436422439731304,-0.0081718216837708,-9.85091722251461e-05,"Gate refitted on matched training-center frames (small channel, PNG), scored at external center",1069,38,"exploratory","contrast_rms sharp_tenengrad haze_dcp illum_slope lum_entropy"
+"auroc",0.509919724770642,0.454560340744143,0.570286119456382,"Gate refitted on matched training-center frames (small channel, PNG), scored at external center",1069,38,"exploratory","contrast_rms sharp_tenengrad haze_dcp illum_slope lum_entropy"
+"events",109,75,146,"Gate refitted on matched training-center frames (small channel, PNG), scored at external center",1069,38,"exploratory","contrast_rms sharp_tenengrad haze_dcp illum_slope lum_entropy"
+"aurc_gate",0.0466799802396521,0.0406631932164767,0.0537289061961374,"Gate refitted on matched lumbar small-channel PNG training frames, scored on external lumbar frames",907,33,"exploratory",""
+"aurc_random",0.0466799802396519,0.0406631932164767,0.0537289061961371,"Gate refitted on matched lumbar small-channel PNG training frames, scored on external lumbar frames",907,33,"exploratory",""
+"diff",2.63677968348475e-16,-3.40005801291454e-16,4.16333634234434e-16,"Gate refitted on matched lumbar small-channel PNG training frames, scored on external lumbar frames",907,33,"exploratory",""
+"auroc",0.5,0.5,0.5,"Gate refitted on matched lumbar small-channel PNG training frames, scored on external lumbar frames",907,33,"exploratory",""
+"events",95,65,129,"Gate refitted on matched lumbar small-channel PNG training frames, scored on external lumbar frames",907,33,"exploratory",""
+"aurc_gate",0.0381838996078902,0.0273669068418148,0.0508467905992763,"Locked gate, external center, Normal frames",426,38,"exploratory",NA
+"aurc_random",0.0356565537120249,0.0273492000012721,0.0464688737490638,"Locked gate, external center, Normal frames",426,38,"exploratory",NA
+"diff",0.00252734589586526,-0.00270302602161356,0.00918874598930434,"Locked gate, external center, Normal frames",426,38,"exploratory",NA
+"auroc",0.403557692307692,0.315828227229368,0.496321983793767,"Locked gate, external center, Normal frames",426,38,"exploratory",NA
+"events",26,14,40,"Locked gate, external center, Normal frames",426,38,"exploratory",NA
+"aurc_gate",0.0215625695589052,0.0176107595488902,0.0265192496802393,"Locked gate OOF, training center, Normal frames",2255,57,"exploratory",NA
+"aurc_random",0.0217116139732565,0.0186298390768987,0.0255390568237026,"Locked gate OOF, training center, Normal frames",2255,57,"exploratory",NA
+"diff",-0.000149044414351335,-0.00298632137910028,0.00311974081149517,"Locked gate OOF, training center, Normal frames",2255,57,"exploratory",NA
+"auroc",0.537871255372378,0.390560364214645,0.643431590495376,"Locked gate OOF, training center, Normal frames",2255,57,"exploratory",NA
+"events",28,14.975,45,"Locked gate OOF, training center, Normal frames",2255,57,"exploratory",NA
+"aurc_gate",0.0559043448453902,0.0482880831746891,0.0641427920868296,"Locked gate, external center, Difficult frames",643,37,"exploratory",NA
+"aurc_random",0.0528946577216138,0.0466837910237104,0.0602151762919289,"Locked gate, external center, Difficult frames",643,37,"exploratory",NA
+"diff",0.0030096871237764,-0.00131139624798819,0.00739066467242122,"Locked gate, external center, Difficult frames",643,37,"exploratory",NA
+"auroc",0.403765060240964,0.347636717629625,0.471115829025059,"Locked gate, external center, Difficult frames",643,37,"exploratory",NA
+"events",83,57,114.025,"Locked gate, external center, Difficult frames",643,37,"exploratory",NA
+"aurc_gate",0.0507232963761835,0.0396168402005396,0.0649210672514407,"Locked gate OOF, training center, Difficult frames",7335,61,"exploratory",NA
+"aurc_random",0.0636426357192443,0.0532878233521269,0.0738709648175192,"Locked gate OOF, training center, Difficult frames",7335,61,"exploratory",NA
+"diff",-0.0129193393430608,-0.0164245308494451,-0.00603252761262731,"Locked gate OOF, training center, Difficult frames",7335,61,"exploratory",NA
+"auroc",0.603892662026034,0.539202946255369,0.667502029705692,"Locked gate OOF, training center, Difficult frames",7335,61,"exploratory",NA
+"events",1265,890.975,1677,"Locked gate OOF, training center, Difficult frames",7335,61,"exploratory",NA

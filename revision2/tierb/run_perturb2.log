@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+20:12:55 perturb2: fold0 finished, 67/400 frames, 3202 s
+20:43:29 perturb2: fold1 finished, 150/400 frames, 5036 s
+20:58:33 perturb2: fold2 finished, 227/400 frames, 5940 s
+21:04:53 perturb2: fold3 finished, 306/400 frames, 6320 s
+21:13:02 perturb2: fold4 finished, 400/400 frames, 6809 s
+21:13:03 wrote tierb_perturb2.parquet (20000 rows) {'n_rows': 20000, 'local_area_frac': 0.25, 'severities': [3, 5], 'local_families': ['defocus', 'haze', 'exposure_under', 'exposure_over', 'blood_absorption', 'noise'], 'pairs': ['defocus+haze', 'haze+exposure_under', 'blood_absorption+exposure_under', 'exposure_over+glare', 'defocus+noise', 'glare+noise'], 'wall_s': 6812.2, 'device': 'mps'}
