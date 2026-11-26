@@ -1,0 +1,29 @@
+"stat","est","lo","hi","analysis","nonzero_metrics"
+"aurc_gate",0.0417664048270861,0.0343420948080669,0.0514235704879592,"Development, native resolution, locked out-of-fold gate",NA
+"aurc_random",0.0537829429103598,0.0458861514796707,0.0619642693021542,"Development, native resolution, locked out-of-fold gate",NA
+"diff",-0.0120165380832737,-0.0147746455164165,-0.00740185178358889,"Development, native resolution, locked out-of-fold gate",NA
+"auroc_gate",0.633601434971091,0.580305361255921,0.685351559460789,"Development, native resolution, locked out-of-fold gate",NA
+"auroc_entropy",0.913953281784217,0.900405464338058,0.924427010531449,"Development, native resolution, locked out-of-fold gate",NA
+"failure_rate",0.134827945776851,0.100242802742186,0.170788647334066,"Development, native resolution, locked out-of-fold gate",NA
+"events",1293,913.95,1706.05,"Development, native resolution, locked out-of-fold gate",NA
+"aurc_gate",0.0415609054928915,0.0347546811642524,0.0505356360610843,"Development, harmonized to external resolution, locked out-of-fold gate",NA
+"aurc_random",0.0534538274203868,0.0459870082913982,0.0614844695753817,"Development, harmonized to external resolution, locked out-of-fold gate",NA
+"diff",-0.0118929219274953,-0.0144703435065662,-0.00775861836180114,"Development, harmonized to external resolution, locked out-of-fold gate",NA
+"auroc_gate",0.630887974237314,0.582624092644796,0.676158571876503,"Development, harmonized to external resolution, locked out-of-fold gate",NA
+"auroc_entropy",0.912496522418491,0.89853133902421,0.923391048036136,"Development, harmonized to external resolution, locked out-of-fold gate",NA
+"failure_rate",0.131386861313869,0.0980016337165339,0.166387707126187,"Development, harmonized to external resolution, locked out-of-fold gate",NA
+"events",1260,885.975,1666.05,"Development, harmonized to external resolution, locked out-of-fold gate",NA
+"aurc_gate",0.047708891072733,0.0395902006915367,0.0563864919003291,"External, gate refitted on native-resolution development data","sharp_tenengrad lum_entropy"
+"aurc_random",0.0460252168347243,0.0399146307981141,0.0533108991376554,"External, gate refitted on native-resolution development data","sharp_tenengrad lum_entropy"
+"diff",0.00168367423800866,-0.00202358479695407,0.00559843857579002,"External, gate refitted on native-resolution development data","sharp_tenengrad lum_entropy"
+"auroc_gate",0.420240825688073,0.373409285622145,0.474967226182056,"External, gate refitted on native-resolution development data","sharp_tenengrad lum_entropy"
+"auroc_entropy",0.880839067278287,0.840951343393366,0.912606755332673,"External, gate refitted on native-resolution development data","sharp_tenengrad lum_entropy"
+"failure_rate",0.101964452759588,0.0753011356721653,0.130182856261091,"External, gate refitted on native-resolution development data","sharp_tenengrad lum_entropy"
+"events",109,75,146,"External, gate refitted on native-resolution development data","sharp_tenengrad lum_entropy"
+"aurc_gate",0.049235335506493,0.0404422597497854,0.0582229849415665,"External, gate refitted on harmonized development data","sharp_tenengrad lum_entropy"
+"aurc_random",0.0460252168347243,0.0399146307981141,0.0533108991376554,"External, gate refitted on harmonized development data","sharp_tenengrad lum_entropy"
+"diff",0.00321011867176865,-0.00116550666426852,0.00779382907662812,"External, gate refitted on harmonized development data","sharp_tenengrad lum_entropy"
+"auroc_gate",0.419352064220184,0.370717380521299,0.47455931079812,"External, gate refitted on harmonized development data","sharp_tenengrad lum_entropy"
+"auroc_entropy",0.880839067278287,0.840951343393366,0.912606755332673,"External, gate refitted on harmonized development data","sharp_tenengrad lum_entropy"
+"failure_rate",0.101964452759588,0.0753011356721653,0.130182856261091,"External, gate refitted on harmonized development data","sharp_tenengrad lum_entropy"
+"events",109,75,146,"External, gate refitted on harmonized development data","sharp_tenengrad lum_entropy"

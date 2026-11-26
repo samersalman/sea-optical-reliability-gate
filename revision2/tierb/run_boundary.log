@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+16:14:03 boundary: final finished, 1069/10659 frames, 348 s
+16:17:24 boundary: fold0 finished, 2984/10659 frames, 549 s
+16:41:36 boundary: fold1 finished, 4899/10659 frames, 2000 s
+16:55:05 boundary: fold2 finished, 6831/10659 frames, 2810 s
+17:17:02 boundary: fold3 finished, 8745/10659 frames, 4127 s
+19:13:21 boundary: fold4 finished, 10659/10659 frames, 11106 s
+19:19:19 max abs difference vs stored predictions: {'iou': 0.0, 'entropy_fov': 0.0, 'ens_dis': 0.0}
+19:19:19 wrote tierb_boundary.parquet (21318 rows) {'n_rows': 21318, 'max_abs_diff_vs_stored': {'iou': 0.0, 'entropy_fov': 0.0, 'ens_dis': 0.0}, 'biou_band_frac_of_diagonal': 0.02, 'wall_s': 11463.8, 'device': 'mps'}

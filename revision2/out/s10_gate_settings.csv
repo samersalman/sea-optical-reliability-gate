@@ -1,0 +1,13 @@
+"item","value"
+"alpha",0.5
+"lambda_1se",0.0993963031214929
+"spline_df",3
+"inner_folds",5
+"seed_global",20261020
+"seed_folds",20261021
+"seed_train",20261022
+"seed_bootstrap",20261023
+"seed_perturb",20261024
+"failure_threshold",0.9
+"cutoff_90",-1.56430375711632
+"cutoff_80",-1.74182598774126

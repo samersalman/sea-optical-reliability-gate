@@ -1,0 +1,79 @@
+{
+ "frames": 100,
+ "reps_per_frame": 3,
+ "torch": "2.10.0",
+ "machine": "arm64",
+ "note": "decode excluded; single CPU thread for metrics; batch size 1",
+ "fov_detection": {
+  "median_ms": 3.89,
+  "p10_ms": 3.56,
+  "p90_ms": 4.38,
+  "n": 300
+ },
+ "optical_metrics_11": {
+  "median_ms": 15.63,
+  "p10_ms": 14.37,
+  "p90_ms": 16.63,
+  "n": 300
+ },
+ "cpu_unet_forward": {
+  "median_ms": 59.9,
+  "p10_ms": 50.02,
+  "p90_ms": 68.99,
+  "n": 300
+ },
+ "cpu_unet_forward_plus_entropy": {
+  "median_ms": 57.06,
+  "p10_ms": 49.56,
+  "p90_ms": 70.3,
+  "n": 300
+ },
+ "cpu_segformer_forward": {
+  "median_ms": 474.4,
+  "p10_ms": 205.81,
+  "p90_ms": 818.62,
+  "n": 300
+ },
+ "cpu_segformer_forward_plus_entropy": {
+  "median_ms": 324.91,
+  "p10_ms": 205.66,
+  "p90_ms": 601.52,
+  "n": 300
+ },
+ "cpu_ensemble_disagreement": {
+  "median_ms": 480.47,
+  "p10_ms": 271.12,
+  "p90_ms": 652.02,
+  "n": 300
+ },
+ "mps_unet_forward": {
+  "median_ms": 11.72,
+  "p10_ms": 11.37,
+  "p90_ms": 12.18,
+  "n": 300
+ },
+ "mps_unet_forward_plus_entropy": {
+  "median_ms": 12.43,
+  "p10_ms": 11.9,
+  "p90_ms": 13.25,
+  "n": 300
+ },
+ "mps_segformer_forward": {
+  "median_ms": 7.01,
+  "p10_ms": 6.68,
+  "p90_ms": 7.34,
+  "n": 300
+ },
+ "mps_segformer_forward_plus_entropy": {
+  "median_ms": 9.09,
+  "p10_ms": 8.34,
+  "p90_ms": 9.81,
+  "n": 300
+ },
+ "mps_ensemble_disagreement": {
+  "median_ms": 18.83,
+  "p10_ms": 18.3,
+  "p90_ms": 19.37,
+  "n": 300
+ }
+}

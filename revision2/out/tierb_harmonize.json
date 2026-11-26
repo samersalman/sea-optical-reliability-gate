@@ -1,0 +1,7 @@
+{
+ "n_rows": 19180,
+ "target_fov_radius_px": 270.9362066411029,
+ "rule": "native frame area-downsampled so fov_r equals the Center 2 median; never upsampled",
+ "wall_s": 40397.8,
+ "device": "mps"
+}

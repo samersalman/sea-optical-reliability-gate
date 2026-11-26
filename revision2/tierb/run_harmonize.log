@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+22:44:36 harmonize: fold0 finished, 1915/9590 frames, 5124 s
+04:10:17 harmonize: fold1 finished, 3830/9590 frames, 24665 s
+08:11:46 harmonize: fold2 finished, 5762/9590 frames, 39154 s
+08:25:14 harmonize: fold3 finished, 7676/9590 frames, 39962 s
+08:26:25 harmonize: fold4 finished, 9590/9590 frames, 40033 s
+08:26:25 wrote tierb_harmonize.parquet (19180 rows) {'n_rows': 19180, 'target_fov_radius_px': 270.9362066411029, 'rule': 'native frame area-downsampled so fov_r equals the Center 2 median; never upsampled', 'wall_s': 40397.8, 'device': 'mps'}
