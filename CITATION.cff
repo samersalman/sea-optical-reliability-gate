@@ -6,9 +6,9 @@ message: If you use this software, please cite it using these metadata.
 type: software
 license: MIT
 repository-code: https://github.com/samersalman/sea-optical-reliability-gate
-version: 2.0.0
-doi: 10.5281/zenodo.24120798
-date-released: 2026-11-10
+version: 2.1.0
+doi: 10.5281/zenodo.23575279
+date-released: 2026-11-26
 abstract: >-
   Analysis pipeline for a retrospective external-validation study of whether
   interpretable optical image-quality measurements can flag unreliable

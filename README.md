@@ -167,8 +167,12 @@ An MPS finding shaped the code: on the authors' Apple GPU, PyTorch `grid_sample`
 
 See `CITATION.cff` (GitHub shows a "Cite this repository" button). Please also cite the SEA descriptor (Xu et al., doi:10.1038/s41597-025-05897-7) and, if you use the SegFormer checkpoints, Xie et al. 2021, arXiv:2105.15203.
 
-Zenodo DOI: 10.5281/zenodo.24120798 (release v.2.0.0); all versions: 10.5281/zenodo.23575279.
+Zenodo DOI for all versions: 10.5281/zenodo.23575279. Release v.2.0.0: 10.5281/zenodo.24120798. Release v.2.1.0 has its own version DOI, listed on the Zenodo record.
 
-## Changes since v1.0.0
+## Changes in v.2.1.0
+
+Release v.2.1.0 adds `revision2/`, the post hoc analyses from the second round of peer review (see `revision2/README.md`). They are exploratory. Nothing in `v1/` changed: the locked gate, cutoffs, failure threshold, checkpoints, derived tables and primary results are those of release v.2.0.0. The 12 checkpoints remain assets of release v.2.0.0.
+
+## Changes in v.2.0.0
 
 Release v.2.0.0 regenerates Figure 1 with larger text (`v1/R/10_fig1.R` layout and font sizes, and `v1/figures/Figure1.pdf`) and updates `CITATION.cff` to the current title. No analysis code, model, locked setting, derived table or result changed. The 12 checkpoints are assets of release v.2.0.0; release v1.0.0 was published without them.
